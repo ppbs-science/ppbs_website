@@ -1,7 +1,7 @@
 [
   {
     "name": "Ana Clara Ebert",
-    "group": "Researchers",
+    "group": "Past Researchers",
     "affiliation": "Vrije Universiteit Amsterdam",
     "photo": "img/team/AE.JPG",
     "bio": "Research Master's student in Social Psychology at VU Amsterdam, interested in the social and psychological mechanisms that maintain socioeconomic inequality.",
@@ -35,12 +35,20 @@
   {
     "name": "Flavio Azevedo",
     "group": "Researchers",
+    "role": "Principal Investigator",
     "affiliation": "Utrecht University",
     "photo": "img/team/flavio.png",
     "bio": "Brazilian assistant professor of Interdisciplinary Social Sciences at Utrecht University. His research focuses on the political psychology of ideological attitudes and integrating open science into higher education.",
     "contact": { "url": "https://www.linkedin.com/in/flavio-azevedo-571a371aa", "icon": "linkedin" },
     "profile": { "url": "http://flavioazevedo.com/", "icon": "website" },
     "sort_last": true
+  },
+  {
+    "name": "Sophie Hetche",
+    "group": "Researchers",
+    "affiliation": "Max Planck Institute for the Study of Crime, Security and Law",
+    "bio": "Doctoral researcher in criminology studying developmental psychology, peer influences in adolescent delinquency, political-psychological foundations of legal attitudes, and virtual-reality interventions.",
+    "profile": { "url": "https://csl.mpg.de/en/sophie-hetche", "icon": "website" }
   },
   {
     "name": "Andre Kaiser",

@@ -471,6 +471,12 @@ footer .f-body {
   border-bottom: 1px solid var(--rule);
   text-align: center;
 }
+.team-grid .team-member--pi {
+  background: rgba(26, 94, 58, 0.10);
+}
+.team-grid .team-member--pi img {
+  border-color: var(--accent);
+}
 .team-grid .team-member img {
   width: 120px;
   height: 120px;
@@ -501,6 +507,14 @@ footer .f-body {
   text-transform: uppercase;
   letter-spacing: .04em;
   margin-bottom: 4px;
+}
+.team-grid .team-member .team-role {
+  margin-bottom: 6px;
+  color: var(--accent);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
 }
 .team-grid .team-member .affiliation {
   font-size: 12px;

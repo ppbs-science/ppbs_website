@@ -246,6 +246,9 @@ function buildTeamCards() {
     for (const m of members) {
       const img = memberPortrait(m);
       const aff = m.affiliation ? `<div class="affiliation">${m.affiliation}</div>` : '';
+      const isPI = m.role === 'Principal Investigator';
+      const memberClass = `team-member${isPI ? ' team-member--pi' : ''}`;
+      const role = m.role ? `<div class="team-role">${m.role}</div>` : '';
 
       let links = '';
       if (m.contact || m.profile) {
@@ -263,10 +266,10 @@ function buildTeamCards() {
         links += '</div>';
       }
 
-      html += `      <div class="team-member">
+      html += `      <div class="${memberClass}">
         ${img}
         <h3>${m.name}</h3>
-        ${aff}
+        ${role}${role && aff ? '\n        ' : ''}${aff}
         ${links}
       </div>\n`;
     }
