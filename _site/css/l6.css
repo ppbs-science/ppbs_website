@@ -455,11 +455,11 @@ footer .f-body {
   border: 1px solid var(--rule);
 }
 .team-group:last-child { margin-bottom: 0; }
-.team-group--researchers { background: #e7eee8; }
-.team-group--collaborators { background: #e8edf0; }
-.team-group--past-researchers { background: #f2e9e4; }
-.team-group--funders { background: #eeeadf; }
-.team-group--mentors { background: #ebe8f0; }
+.team-group--researchers { background: #e9e7e2; }
+.team-group--collaborators { background: #eceae6; }
+.team-group--past-researchers { background: #efede9; }
+.team-group--funders { background: #f4f2ee; }
+.team-group--mentors { background: #f7f5f1; }
 .team-group-intro {
   padding: 24px;
   border-bottom: 1px solid var(--rule);
