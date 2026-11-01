@@ -215,8 +215,30 @@ function buildTeamCards() {
 
   const team = readJSON(dataFile);
 
-  // Define group order
-  const groupOrder = ['Researchers', 'Collaborators', 'Past Researchers', 'Funders', 'Mentors'];
+  // Group order, explanatory copy, and color hooks for the investigators page.
+  const groupMeta = {
+    'Researchers': {
+      slug: 'researchers',
+      description: 'The core PPBS team. These researchers guide the program\'s day-to-day work—from study planning and coordination to data stewardship, analysis, documentation, and the collaborations that keep the project moving.'
+    },
+    'Collaborators': {
+      slug: 'collaborators',
+      description: 'Close research partners who have helped shape PPBS studies, methods, and publications through sustained intellectual and practical collaboration.'
+    },
+    'Past Researchers': {
+      slug: 'past-researchers',
+      description: 'Former core-team members whose ideas, care, and hard work helped build PPBS. Although they are no longer involved in its day-to-day work, their contributions remain part of the project, and we are deeply grateful to them.'
+    },
+    'Funders': {
+      slug: 'funders',
+      description: 'Colleagues who have helped secure or provide funding, resources, institutional support, and partnerships that make PPBS possible and extend its data infrastructure and international reach.'
+    },
+    'Mentors': {
+      slug: 'mentors',
+      description: 'Senior colleagues who offer guidance, methodological advice, and career support—especially to early-career researchers developing projects with PPBS data.'
+    }
+  };
+  const groupOrder = Object.keys(groupMeta);
 
   // Group members
   const groups = {};
@@ -237,44 +259,53 @@ function buildTeamCards() {
 
   let html = '';
   for (const groupName of groupOrder) {
-    const members = groups[groupName];
-    if (!members || members.length === 0) continue;
+    const members = groups[groupName] || [];
+    const meta = groupMeta[groupName];
 
-    html += `<h2 class="team-group-heading">${groupName}</h2>\n`;
-    html += `<div class="team-grid">\n`;
+    html += `<section class="team-group team-group--${meta.slug}">\n`;
+    html += `  <div class="team-group-intro">\n`;
+    html += `    <h2 class="team-group-heading">${groupName}</h2>\n`;
+    html += `    <p class="team-group-description">${meta.description}</p>\n`;
+    html += `  </div>\n`;
 
-    for (const m of members) {
-      const img = memberPortrait(m);
-      const aff = m.affiliation ? `<div class="affiliation">${m.affiliation}</div>` : '';
-      const isPI = m.role === 'Principal Investigator';
-      const memberClass = `team-member${isPI ? ' team-member--pi' : ''}`;
-      const role = m.role ? `<div class="team-role">${m.role}</div>` : '';
+    if (members.length > 0) {
+      html += `  <div class="team-grid">\n`;
 
-      let links = '';
-      if (m.contact || m.profile) {
-        links = '<div class="social-links">';
-        if (m.contact) {
-          const icon = socialIcons[m.contact.icon] || socialIcons.website;
-          const label = m.contact.icon === 'linkedin' ? 'LinkedIn' : 'Contact';
-          links += `<a href="${m.contact.url}" target="_blank" rel="noopener" title="${label}" class="social-icon">${icon}</a>`;
+      for (const m of members) {
+        const img = memberPortrait(m);
+        const aff = m.affiliation ? `<div class="affiliation">${m.affiliation}</div>` : '';
+        const isPI = m.role === 'Principal Investigator';
+        const memberClass = `team-member${isPI ? ' team-member--pi' : ''}`;
+        const role = m.role ? `<div class="team-role">${m.role}</div>` : '';
+
+        let links = '';
+        if (m.contact || m.profile) {
+          links = '<div class="social-links">';
+          if (m.contact) {
+            const icon = socialIcons[m.contact.icon] || socialIcons.website;
+            const label = m.contact.icon === 'linkedin' ? 'LinkedIn' : 'Contact';
+            links += `<a href="${m.contact.url}" target="_blank" rel="noopener" title="${label}" class="social-icon">${icon}</a>`;
+          }
+          if (m.profile) {
+            const icon = socialIcons[m.profile.icon] || socialIcons.website;
+            const label = m.profile.icon === 'scholar' ? 'Google Scholar' : m.profile.icon === 'website' ? 'Website' : 'Profile';
+            links += `<a href="${m.profile.url}" target="_blank" rel="noopener" title="${label}" class="social-icon">${icon}</a>`;
+          }
+          links += '</div>';
         }
-        if (m.profile) {
-          const icon = socialIcons[m.profile.icon] || socialIcons.website;
-          const label = m.profile.icon === 'scholar' ? 'Google Scholar' : m.profile.icon === 'website' ? 'Website' : 'Profile';
-          links += `<a href="${m.profile.url}" target="_blank" rel="noopener" title="${label}" class="social-icon">${icon}</a>`;
-        }
-        links += '</div>';
-      }
 
-      html += `      <div class="${memberClass}">
+        html += `      <div class="${memberClass}">
         ${img}
         <h3>${m.name}</h3>
         ${role}${role && aff ? '\n        ' : ''}${aff}
         ${links}
       </div>\n`;
+      }
+
+      html += `  </div>\n`;
     }
 
-    html += `</div>\n`;
+    html += `</section>\n`;
   }
 
   return html;
