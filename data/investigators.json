@@ -28,7 +28,7 @@
     "name": "Max Wan",
     "group": "Researchers",
     "affiliation": "Psychology of Political Behavior Studies",
-    "photo": "img/team/MW.jpg",
+    "photo": "img/team/MW.png",
     "bio": "Data analyst and interdisciplinary researcher.",
     "profile": { "url": "https://maxfw.com", "icon": "website" }
   },
@@ -47,6 +47,7 @@
     "name": "Sophie Hetche",
     "group": "Researchers",
     "affiliation": "Max Planck Institute for the Study of Crime, Security and Law",
+    "photo": "img/team/sophie-hetche.jpg",
     "bio": "Doctoral researcher in criminology studying developmental psychology, peer influences in adolescent delinquency, political-psychological foundations of legal attitudes, and virtual-reality interventions.",
     "profile": { "url": "https://csl.mpg.de/en/sophie-hetche", "icon": "website" }
   },
