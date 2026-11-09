@@ -13,7 +13,8 @@
     "affiliation": "University of Amsterdam",
     "photo": "img/team/JH.png",
     "bio": "Researcher in political psychology who completed a Research Master in Psychology at the University of Amsterdam. Her work focuses on political behavior, polarization, and democratic resilience.",
-    "contact": { "url": "https://www.linkedin.com/in/jasmin-hagemann-284585227/", "icon": "linkedin" }
+    "contact": { "url": "https://www.linkedin.com/in/jasmin-hagemann-284585227/", "icon": "linkedin" },
+    "profile": { "url": "https://hotpolitics.eu/team/", "icon": "website" }
   },
   {
     "name": "Lukas Wallrich",
@@ -57,6 +58,7 @@
     "affiliation": "University of Cologne",
     "photo": "img/team/AK.png",
     "bio": "Professor of Comparative Politics at University of Cologne and Director of Cologne Center for Comparative Politics.",
+    "contact": { "url": "mailto:comparative.office@wiso.uni-koeln.de", "icon": "email" },
     "profile": { "url": "https://wiso.uni-koeln.de/en/research/professors/professors-a-to-z/prof-dr-andre-kaiser", "icon": "website" }
   },
   {
@@ -74,6 +76,7 @@
     "affiliation": "University of Washington",
     "photo": "img/team/CP.png",
     "bio": "Professor of Political Science at the University of Washington, author of 'Fighting for Democracy' and 'Change They Can't Believe In'.",
+    "contact": { "url": "mailto:csparker@uw.edu", "icon": "email" },
     "profile": { "url": "http://christophersebastianparker.com/", "icon": "website" }
   },
   {
@@ -82,6 +85,7 @@
     "affiliation": "VU Amsterdam",
     "photo": "img/team/JT.png",
     "bio": "Associate Professor in Experimental and Applied Psychology at VU Amsterdam, studying fundamental problems of life including disease avoidance, mating, and interdependence.",
+    "contact": { "url": "https://x.com/joshtybur", "icon": "twitter" },
     "profile": { "url": "http://www.joshtybur.com/", "icon": "website" }
   },
   {
@@ -90,6 +94,7 @@
     "affiliation": "CORE Lab",
     "photo": "img/team/PF.png",
     "bio": "Post-doc researcher at the Co-Regulation (CORE) Lab focusing on meta-science and social disparities.",
+    "contact": { "url": "https://www.linkedin.com/in/patrick-forscher-91163854", "icon": "linkedin" },
     "profile": { "url": "https://patrickforscher.com/", "icon": "website" }
   },
   {
@@ -98,6 +103,7 @@
     "affiliation": "Friedrich Schiller University Jena",
     "photo": "img/team/TR.png",
     "bio": "Professor at the Institute for Communication Science at Friedrich Schiller University, investigating psychological processes in media-mediated communication.",
+    "contact": { "url": "https://www.linkedin.com/in/tobias-rothmund-62250015", "icon": "linkedin" },
     "profile": { "url": "https://www.uni-jena.de/ifkw-en/prof_dr_tobias_rothmund", "icon": "website" }
   },
   {
@@ -131,6 +137,7 @@
     "affiliation": "Leibniz University Hannover",
     "photo": "img/team/LM.png",
     "bio": "Postdoctoral fellow at the Institute of Psychology, Leibniz University Hannover, researching how inequality, scarcity and unfairness influence decision-making.",
+    "contact": { "url": "https://www.linkedin.com/in/leticia-micheli-ba82b4378", "icon": "linkedin" },
     "profile": { "url": "https://leticiamicheli.github.io/", "icon": "website" }
   },
   {
