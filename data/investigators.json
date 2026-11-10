@@ -123,6 +123,24 @@
     "profile": { "url": "https://scholar.google.com/citations?user=Xl12HsoAAAAJ&hl=en", "icon": "scholar" }
   },
   {
+    "name": "Marcel Lubbers",
+    "group": "Funders",
+    "affiliation": "Utrecht University",
+    "photo": "img/team/marcel-lubbers.jpg",
+    "bio": "Professor and Head of Interdisciplinary Social Science at Utrecht University, studying societal cohesion, immigration, nationalism, Euroscepticism, and voting behavior.",
+    "contact": { "url": "mailto:m.lubbers@uu.nl", "icon": "email" },
+    "profile": { "url": "https://www.uu.nl/medewerkers/MLubbers", "icon": "website" }
+  },
+  {
+    "name": "Olivier Klein",
+    "group": "Funders",
+    "affiliation": "Université libre de Bruxelles",
+    "photo": "img/team/olivier-klein.jpg",
+    "bio": "Professor of Social Psychology and co-director of the Centre for Social and Cultural Psychology, researching collective memory, misinformation, intergroup relations, stereotyping, and open science.",
+    "contact": { "url": "mailto:olivier.klein@ulb.be", "icon": "email" },
+    "profile": { "url": "https://cescup.ulb.be/member/olivier-klein/", "icon": "website" }
+  },
+  {
     "name": "Roosevelt Vilar",
     "group": "Funders",
     "affiliation": "Universidade Cruzeiro do Sul, São Paulo, Brazil",
