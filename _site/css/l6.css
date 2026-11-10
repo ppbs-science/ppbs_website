@@ -252,6 +252,25 @@ footer .f-body {
   justify-content: space-between;
   align-items: center;
 }
+footer .f-profile {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+footer .f-profile-links {
+  display: inline-flex;
+  gap: 8px;
+}
+footer .f-profile-links a {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+footer .f-profile-links a:hover {
+  color: var(--ink);
+}
 
 /* =========================================
    Inner page styles
@@ -494,8 +513,8 @@ footer .f-body {
   background: rgba(255, 255, 255, .18);
 }
 .team-grid .team-member--pi {
-  background: rgba(26, 94, 58, .17);
-  box-shadow: inset 0 0 0 2px rgba(26, 94, 58, .28);
+  background: rgba(10, 10, 10, .045);
+  box-shadow: inset 0 0 0 1px rgba(10, 10, 10, .08);
 }
 .team-grid .team-member--pi img {
   border-color: var(--accent);

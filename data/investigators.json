@@ -41,7 +41,7 @@
     "photo": "img/team/flavio.png",
     "bio": "Brazilian assistant professor of Interdisciplinary Social Sciences at Utrecht University. His research focuses on the political psychology of ideological attitudes and integrating open science into higher education.",
     "contact": { "url": "https://www.linkedin.com/in/flavio-azevedo-571a371aa", "icon": "linkedin" },
-    "profile": { "url": "http://flavioazevedo.com/", "icon": "website" },
+    "profile": { "url": "https://flavioazevedo.com/", "icon": "website" },
     "sort_last": true
   },
   {
@@ -118,7 +118,7 @@
     "name": "Felipe Vilanova",
     "group": "Funders",
     "affiliation": "Universidade La Salle, Canoas, Brazil",
-    "photo": "img/team/FV.jpg",
+    "photo": "img/team/felipe-vilanova.jpg",
     "bio": "Social/political psychologist researching right-wing authoritarianism, corruption, ideology, and political attitudes. ISPP Governing Council member (2025-2028).",
     "profile": { "url": "https://scholar.google.com/citations?user=Xl12HsoAAAAJ&hl=en", "icon": "scholar" }
   },
