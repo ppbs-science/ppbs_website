@@ -10,11 +10,15 @@
   {
     "name": "Jasmin Hagemann",
     "group": "Researchers",
-    "affiliation": "University of Amsterdam",
+    "affiliation": "Luiss University, Rome",
+    "position": "PhD Candidate in Political Science",
     "photo": "img/team/JH.png",
-    "bio": "Researcher in political psychology who completed a Research Master in Psychology at the University of Amsterdam. Her work focuses on political behavior, polarization, and democratic resilience.",
+    "bio": "PhD candidate in Political Science at Luiss University in Rome. With a Research Master's degree in Psychology from the University of Amsterdam, she studies the social and psychological foundations of political attitudes and behaviour, polarisation, ideology, and democratic resilience.",
     "contact": { "url": "https://www.linkedin.com/in/jasmin-hagemann-284585227/", "icon": "linkedin" },
-    "profile": { "url": "https://hotpolitics.eu/team/", "icon": "website" },
+    "profile": { "url": "https://phd.luiss.it/politics/about-us/current-phd-candidates/jasmin-hagemann/", "icon": "website", "label": "Luiss doctoral profile" },
+    "links": [
+      { "url": "https://hotpolitics.eu/team/", "icon": "website", "label": "Hot Politics Lab profile" }
+    ],
     "sort_order": 1
   },
   {
@@ -37,7 +41,7 @@
     "group": "Past Researchers",
     "affiliation": "Psychology of Political Behavior Studies",
     "photo": "img/team/max-wan-monogram-v2.png",
-    "bio": "Data analyst and interdisciplinary researcher.",
+    "bio": "Data analyst and interdisciplinary researcher interested in open science, social justice, and the design of data architectures that make research more accessible, transparent, and reusable.",
     "profile": { "url": "https://maxfw.com", "icon": "website" }
   },
   {
@@ -124,7 +128,7 @@
     "affiliation": "Busara",
     "position": "Senior Behavioral Scientist",
     "photo": "img/team/PF.png",
-    "bio": "Senior Behavioral Scientist at Busara. His work uses meta-research, participatory methods, and research ethics to improve the quality and generalisability of behavioural science, with particular attention to social disparities and whose perspectives shape research.",
+    "bio": "Senior Behavioral Scientist at Busara and formerly an Assistant Professor at the University of Arkansas. His work uses meta-research, participatory methods, and research ethics to improve the quality and generalisability of behavioural science, with particular attention to social disparities and whose perspectives shape research.",
     "contact": { "url": "https://www.linkedin.com/in/patrick-forscher-91163854", "icon": "linkedin" },
     "profile": { "url": "https://patrickforscher.com/", "icon": "website" }
   },
@@ -142,17 +146,25 @@
     "name": "Gabriel Gaudencio",
     "group": "Funders",
     "affiliation": "Universidade Presbiteriana Mackenzie, São Paulo, Brazil",
+    "position": "Assistant Professor of Psychology",
     "photo": "img/team/GG.png",
-    "bio": "Clinical psychologist and neuroscientist specializing in moral decision-making, brain stimulation, and social neuroscience.",
-    "profile": { "url": "https://scholar.google.com/citations?user=8O4g-dIAAAAJ&hl=pt-BR", "icon": "scholar" }
+    "bio": "Assistant Professor of Psychology at Universidade Presbiteriana Mackenzie in São Paulo. A clinical psychologist and neuroscientist, he studies moral decision-making, cooperation, brain stimulation, sensation and perception, and social neuroscience.",
+    "profile": { "url": "https://scholar.google.com/citations?user=8O4g-dIAAAAJ&hl=pt-BR", "icon": "scholar" },
+    "links": [
+      { "url": "https://portal.mackenzie.br/es/pos-graduacao/mestrado-doutorado/sao-paulo-higienopolis/trastornos-del-desarrollo/cuerpo-docente", "icon": "website", "label": "Mackenzie faculty profile" }
+    ]
   },
   {
     "name": "Felipe Vilanova",
     "group": "Funders",
     "affiliation": "Universidade La Salle, Canoas, Brazil",
+    "position": "Researcher and Psychology Lecturer",
     "photo": "img/team/felipe-vilanova.jpg",
-    "bio": "Social/political psychologist researching right-wing authoritarianism, corruption, ideology, and political attitudes. ISPP Governing Council member (2025-2028).",
-    "profile": { "url": "https://scholar.google.com/citations?user=Xl12HsoAAAAJ&hl=en", "icon": "scholar" }
+    "bio": "Researcher and psychology lecturer at Universidade La Salle. His work examines right-wing authoritarianism, corruption, ideology, political attitudes, and the advancement of open science in Latin America; he is also an ISPP Governing Council member (2025–2028).",
+    "profile": { "url": "https://scholar.google.com/citations?user=Xl12HsoAAAAJ&hl=en", "icon": "scholar" },
+    "links": [
+      { "url": "https://graduacao.unilasalle.edu.br/cursos-presencial/psicologia", "icon": "website", "label": "Universidade La Salle profile" }
+    ]
   },
   {
     "name": "Marcel Lubbers",
@@ -192,18 +204,23 @@
   {
     "name": "Leticia Micheli",
     "group": "Past Researchers",
-    "affiliation": "Leibniz University Hannover",
+    "affiliation": "Leiden University",
+    "position": "Assistant Professor of Economic Psychology",
     "photo": "img/team/LM.png",
-    "bio": "Postdoctoral fellow at the Institute of Psychology, Leibniz University Hannover, researching how inequality, scarcity and unfairness influence decision-making.",
+    "bio": "Assistant Professor of Economic Psychology in the Social, Economic and Organisational Psychology unit at Leiden University. She studies how inequality, scarcity, fairness, and social context shape decision-making, cooperation, and intergroup relations.",
     "contact": { "url": "https://www.linkedin.com/in/leticia-micheli-ba82b4378", "icon": "linkedin" },
-    "profile": { "url": "https://leticiamicheli.github.io/", "icon": "website" }
+    "profile": { "url": "https://leticiamicheli.github.io/", "icon": "website" },
+    "links": [
+      { "url": "https://www.universiteitleiden.nl/en/staffmembers/leticia-rettore-micheli", "icon": "website", "label": "Leiden University profile" },
+      { "url": "https://orcid.org/0000-0003-0066-8222", "icon": "orcid" }
+    ]
   },
   {
     "name": "Tamara Marques",
     "group": "Past Researchers",
     "affiliation": "University of Minho",
     "photo": "img/team/TM.png",
-    "bio": "Research assistant doing a masters in Sociology at University of Minho, Portugal, interested in Black Lives Matter, race & ethnicity, and social movements.",
+    "bio": "Graduate of the Master's programme in Sociology at the University of Minho in Portugal. Her interests include racial inequality, race and ethnicity, social movements such as Black Lives Matter, and their implications for political behaviour.",
     "contact": { "url": "https://www.linkedin.com/in/tamaramarques/", "icon": "linkedin" }
   },
   {
@@ -363,9 +380,9 @@
     "name": "Iris Smal",
     "group": "Funders",
     "affiliation": "University of Amsterdam",
-    "position": "PhD Candidate",
+    "position": "PhD Candidate in Political Psychology",
     "photo": "img/team/IS.png",
-    "bio": "PhD candidate at the University of Amsterdam studying how opinions, attitudes, and polarisation develop and change using complex-systems approaches. She also works as a community manager for the Open Science Community Amsterdam.",
+    "bio": "PhD candidate in political psychology at the University of Amsterdam, affiliated with the Psychological Methods programme group. She uses complex-systems approaches to study how opinions, attitudes, and polarisation develop and change, and also works as a community manager for the Open Science Community Amsterdam.",
     "contact": { "url": "https://www.linkedin.com/in/iris-smal-734977235/", "icon": "linkedin" },
     "profile": { "url": "https://www.uva.nl/en/profile/s/m/i.m.smal/i.m.smal.html", "icon": "website", "label": "University of Amsterdam profile" },
     "links": [
@@ -377,12 +394,13 @@
     "name": "Robert Ross",
     "group": "Funders",
     "affiliation": "Macquarie University",
-    "position": "Professor",
+    "position": "Postdoctoral Researcher",
     "photo": "img/team/RR.jpg",
-    "bio": "Professor at Macquarie University whose research examines the psychology of belief, including religious and delusional beliefs and misinformation. He combines cognitive psychology, meta-analysis, and public-health research to study why beliefs form and persist.",
+    "bio": "Postdoctoral Researcher in the School of Humanities at Macquarie University. His research examines the psychology of belief, including religious and delusional beliefs and misinformation, combining cognitive science, reasoning research, and meta-science to study why beliefs form and persist.",
     "profile": { "url": "https://researchers.mq.edu.au/en/persons/robert-ross/", "icon": "website", "label": "Macquarie University profile" },
     "links": [
       { "url": "https://scholar.google.com/citations?user=i8EP79UAAAAJ&hl=en", "icon": "scholar" },
+      { "url": "https://orcid.org/0000-0001-8711-1675", "icon": "orcid" },
       { "url": "https://www.scopus.com/authid/detail.uri?authorId=23567212800", "icon": "scopus" }
     ]
   },
