@@ -249,9 +249,12 @@ function buildTeamCards() {
     groups[g].push(m);
   }
 
-  // Sort each group alphabetically, with sort_last members at end
+  // Honour an explicit display order, then fall back to the legacy rules.
   for (const g of Object.keys(groups)) {
     groups[g].sort((a, b) => {
+      const aOrder = Number.isFinite(a.sort_order) ? a.sort_order : Number.MAX_SAFE_INTEGER;
+      const bOrder = Number.isFinite(b.sort_order) ? b.sort_order : Number.MAX_SAFE_INTEGER;
+      if (aOrder !== bOrder) return aOrder - bOrder;
       if (a.sort_last && !b.sort_last) return 1;
       if (!a.sort_last && b.sort_last) return -1;
       return a.name.localeCompare(b.name);
