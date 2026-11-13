@@ -558,6 +558,13 @@ footer .f-profile-links a:hover {
   letter-spacing: .1em;
   text-transform: uppercase;
 }
+.team-grid .team-member .team-position {
+  margin-bottom: 5px;
+  color: #353b38;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.4;
+}
 .team-grid .team-member .affiliation {
   font-size: 12px;
   color: #888;

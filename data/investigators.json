@@ -21,10 +21,15 @@
     "name": "Lukas Wallrich",
     "group": "Researchers",
     "affiliation": "Birkbeck, University of London",
+    "position": "Senior Lecturer in Organisational Psychology",
     "photo": "img/team/LW.jpg",
-    "bio": "Senior Lecturer in Organisational Psychology at Birkbeck Business School, University of London. His research focuses on workforce diversity and organizational performance, and improving workplace culture.",
+    "bio": "Senior Lecturer in Organisational Psychology at Birkbeck Business School. His research examines workforce diversity, intergroup contact, organisational performance, and how open and reproducible research can improve evidence about workplace culture.",
     "contact": { "url": "https://www.linkedin.com/in/lukas-wallrich/", "icon": "linkedin" },
     "profile": { "url": "https://www.lukaswallrich.coffee/", "icon": "website" },
+    "links": [
+      { "url": "https://scholar.google.com/citations?user=T473FrYAAAAJ", "icon": "scholar" },
+      { "url": "https://www.lukaswallrich.coffee/media/CV_Lukas_Wallrich_academic.pdf", "icon": "cv" }
+    ],
     "sort_order": 4
   },
   {
@@ -40,34 +45,47 @@
     "group": "Researchers",
     "role": "Principal Investigator",
     "affiliation": "Utrecht University",
+    "position": "Assistant Professor of Interdisciplinary Social Science",
     "photo": "img/team/flavio.png",
-    "bio": "Brazilian assistant professor of Interdisciplinary Social Sciences at Utrecht University. His research focuses on the political psychology of ideological attitudes and integrating open science into higher education.",
+    "bio": "Assistant Professor of Interdisciplinary Social Science at Utrecht University and Principal Investigator of PPBS. His research examines ideology, anti-democratic attitudes, and political behaviour, alongside open, reproducible, and inclusive approaches to research and higher education.",
     "contact": { "url": "https://www.linkedin.com/in/flavio-azevedo-571a371aa", "icon": "linkedin" },
     "profile": { "url": "https://flavioazevedo.com/", "icon": "website" },
+    "links": [
+      { "url": "https://www.uu.nl/staff/FAAzevedo", "icon": "website", "label": "Utrecht University profile" },
+      { "url": "https://scholar.google.com/citations?user=O2Mp3ygAAAAJ&hl=en", "icon": "scholar" },
+      { "url": "https://orcid.org/0000-0001-9000-8513", "icon": "orcid" }
+    ],
     "sort_order": 5
   },
   {
     "name": "Sophie Hetche",
     "group": "Researchers",
     "affiliation": "Max Planck Institute for the Study of Crime, Security and Law",
+    "position": "Doctoral Researcher",
     "photo": "img/team/sophie-hetche.jpg",
     "bio": "Doctoral researcher in criminology studying developmental psychology, peer influences in adolescent delinquency, political-psychological foundations of legal attitudes, and virtual-reality interventions.",
-    "profile": { "url": "https://csl.mpg.de/en/sophie-hetche", "icon": "website" },
+    "contact": { "url": "mailto:s.hetche@csl.mpg.de", "icon": "email" },
+    "profile": { "url": "https://csl.mpg.de/en/sophie-hetche", "icon": "website", "label": "Max Planck profile" },
     "sort_order": 2
   },
   {
     "name": "Andre Kaiser",
     "group": "Collaborators",
     "affiliation": "University of Cologne",
+    "position": "Full Professor of Comparative Politics",
     "photo": "img/team/AK.png",
-    "bio": "Professor of Comparative Politics at University of Cologne and Director of Cologne Center for Comparative Politics.",
+    "bio": "Full Professor of Comparative Politics at the University of Cologne and Director of the Cologne Center for Comparative Politics. His research focuses on political institutions, federalism and decentralisation, party systems, and comparative political economy.",
     "contact": { "url": "mailto:comparative.office@wiso.uni-koeln.de", "icon": "email" },
-    "profile": { "url": "https://wiso.uni-koeln.de/en/research/professors/professors-a-to-z/prof-dr-andre-kaiser", "icon": "website" }
+    "profile": { "url": "https://wiso.uni-koeln.de/en/research/professors/professors-a-to-z/prof-dr-andre-kaiser", "icon": "website", "label": "University of Cologne profile" },
+    "links": [
+      { "url": "https://scholar.google.com/citations?user=s_GoU5sAAAAJ&hl=en", "icon": "scholar" }
+    ]
   },
   {
     "name": "Ben Saunders",
     "group": "Collaborators",
     "affiliation": "Long Island University",
+    "position": "Associate Professor",
     "photo": "img/team/BS.png",
     "bio": "Associate Professor at Long Island University, Brooklyn. Research interests include social identity, stereotype threat, and system justification theory.",
     "contact": { "url": "https://www.linkedin.com/in/bensaun", "icon": "linkedin" },
@@ -76,27 +94,37 @@
   {
     "name": "Christopher S. Parker",
     "group": "Funders",
-    "affiliation": "University of Washington",
+    "affiliation": "University of California, Santa Barbara",
+    "position": "Professor of Political Science",
     "photo": "img/team/CP.png",
-    "bio": "Professor of Political Science at the University of Washington, author of 'Fighting for Democracy' and 'Change They Can't Believe In'.",
-    "contact": { "url": "mailto:csparker@uw.edu", "icon": "email" },
-    "profile": { "url": "http://christophersebastianparker.com/", "icon": "website" }
+    "bio": "Professor of Political Science at the University of California, Santa Barbara. His research examines American politics, identity, race and ethnicity, public opinion, political behaviour, and the sources and consequences of political polarisation.",
+    "profile": { "url": "https://christophersebastianparker.com/", "icon": "website" },
+    "links": [
+      { "url": "https://www.polsci.ucsb.edu/people/christopher-sebastian-parker", "icon": "website", "label": "UC Santa Barbara profile" },
+      { "url": "https://scholar.google.com/citations?user=wSnaEAMAAAAJ&hl=en", "icon": "scholar" }
+    ]
   },
   {
     "name": "Joshua Tybur",
     "group": "Funders",
-    "affiliation": "VU Amsterdam",
+    "affiliation": "Vrije Universiteit Amsterdam",
+    "position": "Full Professor of Psychology and Infectious Disease",
     "photo": "img/team/JT.png",
-    "bio": "Associate Professor in Experimental and Applied Psychology at VU Amsterdam, studying fundamental problems of life including disease avoidance, mating, and interdependence.",
+    "bio": "Full Professor of Psychology and Infectious Disease at Vrije Universiteit Amsterdam. Drawing on social and personality psychology, behavioural genetics, and evolutionary biology, his research examines disease avoidance, disgust, interpersonal value, interdependence, and political ideology.",
     "contact": { "url": "https://x.com/joshtybur", "icon": "twitter" },
-    "profile": { "url": "http://www.joshtybur.com/", "icon": "website" }
+    "profile": { "url": "https://www.joshtybur.com/", "icon": "website" },
+    "links": [
+      { "url": "https://research.vu.nl/en/persons/joshua-tybur/", "icon": "website", "label": "VU research profile" },
+      { "url": "https://orcid.org/0000-0002-0462-6508", "icon": "orcid" }
+    ]
   },
   {
     "name": "Patrick Forscher",
     "group": "Funders",
-    "affiliation": "CORE Lab",
+    "affiliation": "Busara",
+    "position": "Senior Behavioral Scientist",
     "photo": "img/team/PF.png",
-    "bio": "Post-doc researcher at the Co-Regulation (CORE) Lab focusing on meta-science and social disparities.",
+    "bio": "Senior Behavioral Scientist at Busara. His work uses meta-research, participatory methods, and research ethics to improve the quality and generalisability of behavioural science, with particular attention to social disparities and whose perspectives shape research.",
     "contact": { "url": "https://www.linkedin.com/in/patrick-forscher-91163854", "icon": "linkedin" },
     "profile": { "url": "https://patrickforscher.com/", "icon": "website" }
   },
@@ -104,6 +132,7 @@
     "name": "Tobias Rothmund",
     "group": "Funders",
     "affiliation": "Friedrich Schiller University Jena",
+    "position": "Professor of Communication and Media Psychology",
     "photo": "img/team/TR.png",
     "bio": "Professor at the Institute for Communication Science at Friedrich Schiller University, investigating psychological processes in media-mediated communication.",
     "contact": { "url": "https://www.linkedin.com/in/tobias-rothmund-62250015", "icon": "linkedin" },
@@ -129,19 +158,27 @@
     "name": "Marcel Lubbers",
     "group": "Funders",
     "affiliation": "Utrecht University",
+    "position": "Professor and Department Chair",
     "photo": "img/team/marcel-lubbers.jpg",
     "bio": "Professor and Head of Interdisciplinary Social Science at Utrecht University, studying societal cohesion, immigration, nationalism, Euroscepticism, and voting behavior.",
     "contact": { "url": "mailto:m.lubbers@uu.nl", "icon": "email" },
-    "profile": { "url": "https://www.uu.nl/medewerkers/MLubbers", "icon": "website" }
+    "profile": { "url": "https://www.uu.nl/medewerkers/MLubbers", "icon": "website", "label": "Utrecht University profile" },
+    "links": [
+      { "url": "https://research-portal.uu.nl/en/persons/marcel-lubbers/", "icon": "website", "label": "Utrecht research portal" }
+    ]
   },
   {
     "name": "Olivier Klein",
     "group": "Funders",
     "affiliation": "Université libre de Bruxelles",
+    "position": "Full Professor of Social Psychology",
     "photo": "img/team/olivier-klein.jpg",
-    "bio": "Professor of Social Psychology and co-director of the Centre for Social and Cultural Psychology, researching collective memory, misinformation, intergroup relations, stereotyping, and open science.",
+    "bio": "Full Professor of Social Psychology at the Université libre de Bruxelles and co-director of CeSCuP. His research spans collective memory, social influences on memory, stereotyping and prejudice, dehumanisation, misinformation and conspiracy beliefs, vaccine hesitancy, and open research methods.",
     "contact": { "url": "mailto:olivier.klein@ulb.be", "icon": "email" },
-    "profile": { "url": "https://cescup.ulb.be/member/olivier-klein/", "icon": "website" }
+    "profile": { "url": "https://cescup.ulb.be/member/olivier-klein/", "icon": "website", "label": "CeSCuP profile" },
+    "links": [
+      { "url": "https://scholar.google.be/citations?user=853EBVEAAAAJ&hl=en", "icon": "scholar" }
+    ]
   },
   {
     "name": "Roosevelt Vilar",
@@ -173,71 +210,105 @@
     "name": "Gijs Schumacher",
     "group": "Funders",
     "affiliation": "University of Amsterdam",
+    "position": "Professor of Political Psychology",
     "photo": "img/team/GS.jpg",
-    "bio": "Professor of Political Psychology researching how emotions influence democracy and political decision-making. Co-director of the Hot Politics Lab at UvA.",
+    "bio": "Professor of Political Psychology at the University of Amsterdam and co-director of the Hot Politics Lab. He studies how emotions and personality shape political behaviour, including polarisation, populism and the radical right, social identity, ideology, and democratic representation.",
     "contact": { "url": "https://www.linkedin.com/in/gijs-schumacher-304221b/", "icon": "linkedin" },
-    "profile": { "url": "https://www.gijsschumacher.nl/", "icon": "website" }
+    "profile": { "url": "https://www.gijsschumacher.nl/", "icon": "website" },
+    "links": [
+      { "url": "https://scholar.google.com/citations?user=b0RJDxkAAAAJ&hl=en", "icon": "scholar" }
+    ]
   },
   {
     "name": "Joe Vitriol",
     "group": "Funders",
     "affiliation": "Lehigh University",
+    "position": "Assistant Professor of Management",
     "photo": "img/team/JV.jpg",
-    "bio": "Assistant Professor at Lehigh University, College of Business. Studies causes, consequences, and solutions to bias in judgment and behavior in political, legal, and organizational settings.",
+    "bio": "Assistant Professor of Management at Lehigh University's College of Business. His research investigates bias in judgment and behaviour across political, legal, and organisational settings, including political cognition, misinformation and conspiracy beliefs, extremism, prejudice regulation, leadership, and science communication.",
     "contact": { "url": "https://www.linkedin.com/in/joseph-vitriol-01414436/", "icon": "linkedin" },
-    "profile": { "url": "http://www.joevitriol.com/", "icon": "website" }
+    "profile": { "url": "https://www.joevitriol.com/", "icon": "website" },
+    "links": [
+      { "url": "https://business.lehigh.edu/directory/joseph-vitriol", "icon": "website", "label": "Lehigh University profile" },
+      { "url": "https://scholar.google.com/citations?user=EvKQySAAAAAJ&hl=en", "icon": "scholar" },
+      { "url": "https://osf.io/cjdgs/", "icon": "osf" }
+    ]
   },
   {
     "name": "Gaëlle Marinthe",
     "group": "Funders",
     "affiliation": "Université Clermont Auvergne, France",
+    "position": "Associate Professor",
     "photo": "img/team/GM.jpg",
-    "bio": "Associate Professor specializing in identity processes, collective action, and intergroup relations. Research on collective narcissism and political extremism.",
+    "bio": "Associate Professor at Université Clermont Auvergne. Her research examines social identity, perceived threats, group polarisation, collective action, collective narcissism, political extremism, and other processes that shape intergroup relations.",
     "contact": { "url": "https://www.linkedin.com/in/gaelle-marinthe-980515a4/", "icon": "linkedin" },
-    "profile": { "url": "https://www.lapsco.fr/marinthe-gaelle.html", "icon": "website" }
+    "profile": { "url": "https://www.lapsco.fr/marinthe-gaelle.html", "icon": "website", "label": "LAPSCO profile" },
+    "links": [
+      { "url": "https://orcid.org/0000-0002-1969-1783", "icon": "orcid" },
+      { "url": "https://www.researchgate.net/profile/Gaelle-Marinthe", "icon": "researchgate" },
+      { "url": "https://cv.hal.science/gaelle-marinthe", "icon": "cv", "label": "HAL curriculum vitae" }
+    ]
   },
   {
     "name": "Han van der Maas",
     "group": "Funders",
     "affiliation": "University of Amsterdam",
+    "position": "Professor of Psychological Methods",
     "photo": "img/team/HVM.jpg",
     "bio": "Professor of Psychological Methods specializing in formalization and testing of psychological theories in cognition, attitudes, and intelligence. ERC grant recipient.",
     "contact": { "url": "https://www.linkedin.com/in/han-l-j-van-der-maas-966b7111/", "icon": "linkedin" },
-    "profile": { "url": "https://www.uva.nl/en/profile/m/a/h.l.j.vandermaas/h.l.j.vandermaas.html", "icon": "website" }
+    "profile": { "url": "https://www.uva.nl/en/profile/m/a/h.l.j.vandermaas/h.l.j.vandermaas.html", "icon": "website", "label": "University of Amsterdam profile" },
+    "links": [
+      { "url": "https://scholar.google.com/citations?user=yL2EByAAAAJ&hl=en", "icon": "scholar" }
+    ]
   },
   {
     "name": "Birol Akkus",
     "group": "Funders",
     "affiliation": "Utrecht University",
+    "position": "Assistant Professor",
     "photo": "img/team/BA.jpg",
     "bio": "Assistant Professor researching the influence of culture and cultural values on adolescent/youth development, mental wellbeing, and risk behavior.",
     "contact": { "url": "https://www.linkedin.com/in/birol-akkus-ab0b8b11/", "icon": "linkedin" },
-    "profile": { "url": "https://www.uu.nl/staff/BAkkus", "icon": "website" }
+    "profile": { "url": "https://www.uu.nl/staff/BAkkus", "icon": "website", "label": "Utrecht University profile" },
+    "links": [
+      { "url": "https://research-portal.uu.nl/en/persons/birol-akkus/", "icon": "website", "label": "Utrecht research portal" }
+    ]
   },
   {
     "name": "Tom Nijs",
     "group": "Funders",
     "affiliation": "Erasmus University Rotterdam",
+    "position": "Postdoctoral Researcher",
     "photo": "img/team/TN.jpg",
-    "bio": "Postdoctoral researcher with the Governance and Pluralism team at the Erasmus School of Social and Behavioural Sciences. Research focuses on political behavior and governance.",
+    "bio": "Postdoctoral researcher with the Governance and Pluralism team at Erasmus University Rotterdam. His research examines polarisation, interethnic attitudes, ethnic identity, intergroup contact, psychological ownership beliefs, and radical-right voting.",
     "contact": { "url": "https://www.linkedin.com/in/tom-nijs/", "icon": "linkedin" },
-    "profile": { "url": "https://www.eur.nl/people/tom-nijs", "icon": "website" }
+    "profile": { "url": "https://www.eur.nl/people/tom-nijs", "icon": "website", "label": "Erasmus University profile" },
+    "links": [
+      { "url": "https://scholar.google.com/citations?user=5yV3beUAAAAJ&hl=en", "icon": "scholar" },
+      { "url": "https://pure.eur.nl/en/persons/d1460560-e82f-4033-ba31-b1575db03df4", "icon": "website", "label": "Erasmus research portal" }
+    ]
   },
   {
     "name": "Meta van der Linden",
     "group": "Funders",
     "affiliation": "Utrecht University",
+    "position": "Assistant Professor",
     "photo": "img/team/MVL.jpg",
     "bio": "Assistant Professor researching social psychology of immigration and refugee integration, examining inclusion/exclusion of migrants through an interdisciplinary lens.",
     "contact": { "url": "https://www.linkedin.com/in/metavanderlinden/", "icon": "linkedin" },
-    "profile": { "url": "https://www.uu.nl/staff/MvanderLinden", "icon": "website" }
+    "profile": { "url": "https://www.uu.nl/staff/MvanderLinden", "icon": "website", "label": "Utrecht University profile" },
+    "links": [
+      { "url": "https://research-portal.uu.nl/en/persons/meta-van-der-linden/", "icon": "website", "label": "Utrecht research portal" }
+    ]
   },
   {
     "name": "Manos Tsakiris",
     "group": "Funders",
     "affiliation": "Royal Holloway, University of London; Centre for the Politics of Feelings, School of Advanced Study, University of London",
+    "position": "Professor of Psychology and Centre Director",
     "photo": "img/team/manos-tsakiris.jpg",
-    "bio": "Professor in the Department of Psychology at Royal Holloway and Director of the Centre for the Politics of Feelings at the School of Advanced Study, University of London.",
+    "bio": "Professor of Psychology at Royal Holloway and Director of the Centre for the Politics of Feelings at the School of Advanced Study, University of London. His interdisciplinary research connects the bodily self, emotion, social cognition, and the role of feelings in political life.",
     "contact": { "url": "https://x.com/manos_tsakiris", "icon": "twitter" },
     "profile": { "url": "https://www.politics-of-feelings.com/", "icon": "website" }
   },
@@ -245,8 +316,9 @@
     "name": "Tobias H. Stark",
     "group": "Funders",
     "affiliation": "Utrecht University",
+    "position": "Associate Professor",
     "photo": "img/team/TS.jpg",
-    "bio": "Associate Professor specializing in ethnic prejudice, national identities, and interethnic relations. ERC Consolidator Grant recipient (€2M).",
+    "bio": "Associate Professor at Utrecht University. He studies inequality, ethnic prejudice, national identities, discrimination, and interethnic relations, combining social-network analysis with experiments and other quantitative methods.",
     "contact": { "url": "https://www.linkedin.com/in/tobiasstark/", "icon": "linkedin" },
     "profile": { "url": "https://www.tobiasstark.nl/", "icon": "website" }
   },
@@ -254,24 +326,34 @@
     "name": "Verena Seibel",
     "group": "Funders",
     "affiliation": "Utrecht University",
+    "position": "Associate Professor",
     "photo": "img/team/VS.jpg",
-    "bio": "Assistant Professor with tenure researching migration and social integration, examining how migrants access welfare services. ERC Starting Grant recipient (2025).",
+    "bio": "Associate Professor of Interdisciplinary Social Science at Utrecht University. Her research examines how migrants navigate institutions, social rights, economic uncertainty, and social networks, and how those processes shape social integration and access to welfare services.",
     "contact": { "url": "https://www.linkedin.com/in/verena-seibel-7bb54aa/", "icon": "linkedin" },
-    "profile": { "url": "https://www.verenaseibel.com/", "icon": "website" }
+    "profile": { "url": "https://www.verenaseibel.com/", "icon": "website" },
+    "links": [
+      { "url": "https://www.uu.nl/staff/VMKSeibel", "icon": "website", "label": "Utrecht University profile" },
+      { "url": "https://scholar.google.com/citations?hl=en&user=uSwZs3IAAAAJ", "icon": "scholar" }
+    ]
   },
   {
     "name": "Ekaterina Rashkova-Gerbrands",
     "group": "Funders",
     "affiliation": "Utrecht University",
+    "position": "Associate Professor of Comparative Politics",
     "photo": "img/team/ER.jpg",
     "bio": "Associate Professor of Comparative Politics at the School of Governance at Utrecht University. Co-Director of the PPE College Utrecht. Research focuses on comparative politics and policy.",
     "contact": { "url": "https://www.linkedin.com/in/ekaterina-rashkova-gerbrands/", "icon": "linkedin" },
-    "profile": { "url": "https://www.uu.nl/staff/ERashkovaGerbrands", "icon": "website" }
+    "profile": { "url": "https://www.uu.nl/staff/ERashkovaGerbrands", "icon": "website", "label": "Utrecht University profile" },
+    "links": [
+      { "url": "https://research-portal.uu.nl/en/persons/ekaterina-rashkova-gerbrands/", "icon": "website", "label": "Utrecht research portal" }
+    ]
   },
   {
     "name": "Nick Carnes",
     "group": "Funders",
     "affiliation": "Duke University",
+    "position": "Professor of Public Policy and Political Science",
     "photo": "img/team/NC.jpg",
     "bio": "Professor at the Sanford School of Public Policy at Duke University with appointments in Political Science and Sociology. Research focuses on American politics, economic and social class inequality, and political representation.",
     "contact": { "url": "https://www.linkedin.com/in/nicholas-carnes/", "icon": "linkedin" },
@@ -281,23 +363,34 @@
     "name": "Iris Smal",
     "group": "Funders",
     "affiliation": "University of Amsterdam",
+    "position": "PhD Candidate",
     "photo": "img/team/IS.png",
-    "bio": "PhD candidate researching how opinions and attitudes form and change using complex systems models. Also Open Science Community Manager for OSCA.",
+    "bio": "PhD candidate at the University of Amsterdam studying how opinions, attitudes, and polarisation develop and change using complex-systems approaches. She also works as a community manager for the Open Science Community Amsterdam.",
     "contact": { "url": "https://www.linkedin.com/in/iris-smal-734977235/", "icon": "linkedin" },
-    "profile": { "url": "https://www.uva.nl/en/profile/s/m/i.m.smal/i.m.smal.html", "icon": "website" }
+    "profile": { "url": "https://www.uva.nl/en/profile/s/m/i.m.smal/i.m.smal.html", "icon": "website", "label": "University of Amsterdam profile" },
+    "links": [
+      { "url": "https://orcid.org/0000-0003-4511-9008", "icon": "orcid" },
+      { "url": "https://www.researchgate.net/profile/Iris-Smal", "icon": "researchgate" }
+    ]
   },
   {
     "name": "Robert Ross",
     "group": "Funders",
-    "affiliation": "Macquarie University, Sydney",
+    "affiliation": "Macquarie University",
+    "position": "Professor",
     "photo": "img/team/RR.jpg",
-    "bio": "Research Fellow researching psychology of belief — religious belief, delusional belief, and misinformation. Combines meta-science with cognitive psychology.",
-    "profile": { "url": "https://researchers.mq.edu.au/en/persons/robert-ross/", "icon": "website" }
+    "bio": "Professor at Macquarie University whose research examines the psychology of belief, including religious and delusional beliefs and misinformation. He combines cognitive psychology, meta-analysis, and public-health research to study why beliefs form and persist.",
+    "profile": { "url": "https://researchers.mq.edu.au/en/persons/robert-ross/", "icon": "website", "label": "Macquarie University profile" },
+    "links": [
+      { "url": "https://scholar.google.com/citations?user=i8EP79UAAAAJ&hl=en", "icon": "scholar" },
+      { "url": "https://www.scopus.com/authid/detail.uri?authorId=23567212800", "icon": "scopus" }
+    ]
   },
   {
     "name": "Quinnehtukqut McLamore",
     "group": "Researchers",
     "affiliation": "University of Missouri",
+    "position": "Assistant Professor of Psychological Sciences",
     "photo": "img/team/quinnehtukqut-mclamore.jpg",
     "bio": "Assistant Professor in Psychological Sciences studying conflict narratives, group identities, conspiracy theories, and dehumanization.",
     "profile": { "url": "https://scholar.google.com/citations?user=-K4hkmsAAAAJ&hl=en", "icon": "scholar" },

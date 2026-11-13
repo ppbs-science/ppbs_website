@@ -189,7 +189,26 @@ const socialIcons = {
   website: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>',
   twitter: '<svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>',
   email: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>',
-  orcid: '<i class="ai ai-orcid" aria-hidden="true"></i>'
+  orcid: '<i class="ai ai-orcid" aria-hidden="true"></i>',
+  researchgate: '<i class="ai ai-researchgate" aria-hidden="true"></i>',
+  academia: '<i class="ai ai-academia" aria-hidden="true"></i>',
+  osf: '<i class="ai ai-osf" aria-hidden="true"></i>',
+  cv: '<i class="ai ai-cv" aria-hidden="true"></i>',
+  scopus: '<i class="ai ai-scopus" aria-hidden="true"></i>'
+};
+
+const socialLabels = {
+  linkedin: 'LinkedIn',
+  scholar: 'Google Scholar',
+  website: 'Website',
+  twitter: 'X / Twitter',
+  email: 'Email',
+  orcid: 'ORCID',
+  researchgate: 'ResearchGate',
+  academia: 'Academia.edu',
+  osf: 'OSF',
+  cv: 'Curriculum vitae',
+  scopus: 'Scopus'
 };
 
 // Initials derived from a name, e.g. "Manos Tsakiris" -> "MT".
@@ -278,6 +297,7 @@ function buildTeamCards() {
       for (const m of members) {
         const img = memberPortrait(m);
         const aff = m.affiliation ? `<div class="affiliation">${m.affiliation}</div>` : '';
+        const position = m.position ? `<div class="team-position">${m.position}</div>` : '';
         const isPI = m.role === 'Principal Investigator';
         const memberClass = `team-member${isPI ? ' team-member--pi' : ''}`;
         const role = m.role ? `<div class="team-role">${m.role}</div>` : '';
@@ -285,19 +305,17 @@ function buildTeamCards() {
           ? `<details class="team-bio"><summary aria-label="Read biography for ${m.name}"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 11v6M12 7h.01"/></svg><span>Bio</span></summary><p>${m.bio}</p></details>`
           : '';
 
+        const linkItems = [m.contact, m.profile, ...(Array.isArray(m.links) ? m.links : [])]
+          .filter(Boolean)
+          .filter((item, index, items) => items.findIndex(candidate => candidate.url === item.url) === index);
         let links = '';
-        if (m.contact || m.profile) {
+        if (linkItems.length > 0) {
           links = '<div class="social-links">';
-          if (m.contact) {
-            const icon = socialIcons[m.contact.icon] || socialIcons.website;
-            const label = m.contact.icon === 'linkedin' ? 'LinkedIn' : m.contact.icon === 'twitter' ? 'X / Twitter' : m.contact.icon === 'email' ? 'Email' : 'Contact';
-            const externalAttrs = m.contact.icon === 'email' ? '' : ' target="_blank" rel="noopener"';
-            links += `<a href="${m.contact.url}"${externalAttrs} title="${label}" aria-label="${label} ${m.name}" class="social-icon">${icon}</a>`;
-          }
-          if (m.profile) {
-            const icon = socialIcons[m.profile.icon] || socialIcons.website;
-            const label = m.profile.icon === 'scholar' ? 'Google Scholar' : m.profile.icon === 'orcid' ? 'ORCID' : m.profile.icon === 'website' ? 'Website' : 'Profile';
-            links += `<a href="${m.profile.url}" target="_blank" rel="noopener" title="${label}" aria-label="${label} ${m.name}" class="social-icon">${icon}</a>`;
+          for (const item of linkItems) {
+            const icon = socialIcons[item.icon] || socialIcons.website;
+            const label = item.label || socialLabels[item.icon] || 'Profile';
+            const externalAttrs = item.icon === 'email' ? '' : ' target="_blank" rel="noopener"';
+            links += `<a href="${item.url}"${externalAttrs} title="${label}" aria-label="${label} ${m.name}" class="social-icon">${icon}</a>`;
           }
           links += '</div>';
         }
@@ -305,7 +323,7 @@ function buildTeamCards() {
         html += `      <div class="${memberClass}">
         ${img}
         <h3>${m.name}</h3>
-        ${role}${role && aff ? '\n        ' : ''}${aff}
+        ${position}${position && role ? '\n        ' : ''}${role}${(position || role) && aff ? '\n        ' : ''}${aff}
         ${links}
         ${bio}
       </div>\n`;
