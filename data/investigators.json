@@ -25,7 +25,7 @@
     "bio": "Senior Lecturer in Organisational Psychology at Birkbeck Business School, University of London. His research focuses on workforce diversity and organizational performance, and improving workplace culture.",
     "contact": { "url": "https://www.linkedin.com/in/lukas-wallrich/", "icon": "linkedin" },
     "profile": { "url": "https://www.lukaswallrich.coffee/", "icon": "website" },
-    "sort_order": 3
+    "sort_order": 4
   },
   {
     "name": "Max Wan",
@@ -44,7 +44,7 @@
     "bio": "Brazilian assistant professor of Interdisciplinary Social Sciences at Utrecht University. His research focuses on the political psychology of ideological attitudes and integrating open science into higher education.",
     "contact": { "url": "https://www.linkedin.com/in/flavio-azevedo-571a371aa", "icon": "linkedin" },
     "profile": { "url": "https://flavioazevedo.com/", "icon": "website" },
-    "sort_order": 4
+    "sort_order": 5
   },
   {
     "name": "Sophie Hetche",
@@ -296,10 +296,11 @@
   },
   {
     "name": "Quinnehtukqut McLamore",
-    "group": "Funders",
+    "group": "Researchers",
     "affiliation": "University of Missouri",
     "photo": "img/team/quinnehtukqut-mclamore.jpg",
     "bio": "Assistant Professor in Psychological Sciences studying conflict narratives, group identities, conspiracy theories, and dehumanization.",
-    "profile": { "url": "https://scholar.google.com/citations?user=-K4hkmsAAAAJ&hl=en", "icon": "scholar" }
+    "profile": { "url": "https://scholar.google.com/citations?user=-K4hkmsAAAAJ&hl=en", "icon": "scholar" },
+    "sort_order": 3
   }
 ]
