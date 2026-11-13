@@ -566,16 +566,63 @@ footer .f-profile-links a:hover {
 .team-grid .team-member .social-links {
   display: flex;
   justify-content: center;
-  gap: 12px;
+  gap: 8px;
   margin-top: 10px;
 }
 .team-grid .team-member .social-icon {
   color: #888;
-  transition: color .15s;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(10, 10, 10, .12);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: color .15s, border-color .15s, background .15s;
   display: inline-flex;
+}
+.team-grid .team-member .social-icon .ai {
+  font-size: 18px;
+  line-height: 1;
 }
 .team-grid .team-member .social-icon:hover {
   color: var(--accent);
+  border-color: var(--accent);
+  background: rgba(26, 94, 58, .06);
+}
+.team-grid .team-member .team-bio {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(10, 10, 10, .09);
+}
+.team-grid .team-member .team-bio summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #777;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  list-style: none;
+}
+.team-grid .team-member .team-bio summary::-webkit-details-marker {
+  display: none;
+}
+.team-grid .team-member .team-bio summary::marker {
+  content: '';
+  font-size: 0;
+}
+.team-grid .team-member .team-bio summary:hover,
+.team-grid .team-member .team-bio[open] summary {
+  color: var(--accent);
+}
+.team-grid .team-member .team-bio p {
+  margin: 10px 0 0;
+  color: #4c514d;
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: left;
 }
 
 /* --- PPBS motivation / study-design visuals --- */

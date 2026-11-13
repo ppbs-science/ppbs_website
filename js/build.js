@@ -185,11 +185,11 @@ function buildReportCards() {
 // --- Social media icon SVGs ---
 const socialIcons = {
   linkedin: '<svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>',
-  scholar: '<svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>',
+  scholar: '<i class="ai ai-google-scholar" aria-hidden="true"></i>',
   website: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>',
   twitter: '<svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>',
   email: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>',
-  orcid: '<svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-3.903-3.722z"/></svg>'
+  orcid: '<i class="ai ai-orcid" aria-hidden="true"></i>'
 };
 
 // Initials derived from a name, e.g. "Manos Tsakiris" -> "MT".
@@ -281,6 +281,9 @@ function buildTeamCards() {
         const isPI = m.role === 'Principal Investigator';
         const memberClass = `team-member${isPI ? ' team-member--pi' : ''}`;
         const role = m.role ? `<div class="team-role">${m.role}</div>` : '';
+        const bio = m.bio
+          ? `<details class="team-bio"><summary aria-label="Read biography for ${m.name}"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 11v6M12 7h.01"/></svg><span>Bio</span></summary><p>${m.bio}</p></details>`
+          : '';
 
         let links = '';
         if (m.contact || m.profile) {
@@ -293,8 +296,8 @@ function buildTeamCards() {
           }
           if (m.profile) {
             const icon = socialIcons[m.profile.icon] || socialIcons.website;
-            const label = m.profile.icon === 'scholar' ? 'Google Scholar' : m.profile.icon === 'website' ? 'Website' : 'Profile';
-            links += `<a href="${m.profile.url}" target="_blank" rel="noopener" title="${label}" class="social-icon">${icon}</a>`;
+            const label = m.profile.icon === 'scholar' ? 'Google Scholar' : m.profile.icon === 'orcid' ? 'ORCID' : m.profile.icon === 'website' ? 'Website' : 'Profile';
+            links += `<a href="${m.profile.url}" target="_blank" rel="noopener" title="${label}" aria-label="${label} ${m.name}" class="social-icon">${icon}</a>`;
           }
           links += '</div>';
         }
@@ -304,6 +307,7 @@ function buildTeamCards() {
         <h3>${m.name}</h3>
         ${role}${role && aff ? '\n        ' : ''}${aff}
         ${links}
+        ${bio}
       </div>\n`;
       }
 
