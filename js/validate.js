@@ -6,6 +6,7 @@ const SITE = path.join(ROOT, '_site');
 const DATA = path.join(ROOT, 'data');
 const errors = [];
 const warnings = [];
+let siteFileIndex = null;
 
 function fail(message) {
   errors.push(message);
@@ -26,7 +27,8 @@ function readJson(filename) {
 }
 
 function exists(relativePath, base = ROOT) {
-  return fs.existsSync(path.resolve(base, relativePath));
+  const target = path.resolve(base, relativePath);
+  return path.resolve(base) === SITE ? siteContains(target) : fs.existsSync(target);
 }
 
 function walk(dir, predicate, results = []) {
@@ -37,6 +39,17 @@ function walk(dir, predicate, results = []) {
     else if (predicate(absolute)) results.push(absolute);
   }
   return results;
+}
+
+function siteContains(filePath) {
+  const relative = path.relative(SITE, path.resolve(filePath));
+  if (relative.startsWith('..') || path.isAbsolute(relative)) return false;
+  if (!siteFileIndex) {
+    siteFileIndex = new Set(
+      walk(SITE, () => true).map((file) => path.relative(SITE, file).split(path.sep).join('/'))
+    );
+  }
+  return siteFileIndex.has(relative.split(path.sep).join('/'));
 }
 
 function validateJsonData() {
@@ -145,7 +158,7 @@ function validateLocalReferences() {
       const target = clean.startsWith('/')
         ? path.join(SITE, clean.replace(/^\/+/, ''))
         : path.resolve(path.dirname(htmlFile), clean);
-      if (!fs.existsSync(target)) {
+      if (!siteContains(target)) {
         broken.add(`${path.relative(ROOT, htmlFile)} -> ${raw}`);
       }
     }
