@@ -426,7 +426,10 @@
     "position": "Assistant Professor of Psychological Sciences",
     "photo": "img/team/quinnehtukqut-mclamore.jpg",
     "bio": "Assistant Professor in Psychological Sciences studying conflict narratives, group identities, conspiracy theories, and dehumanization.",
-    "profile": { "url": "https://scholar.google.com/citations?user=-K4hkmsAAAAJ&hl=en", "icon": "scholar" },
+    "profile": { "url": "https://psychology.missouri.edu/people/mclamore", "icon": "website", "label": "University of Missouri faculty profile" },
+    "links": [
+      { "url": "https://scholar.google.com/citations?user=-K4hkmsAAAAJ&hl=en", "icon": "scholar" }
+    ],
     "sort_order": 3
   }
 ]
