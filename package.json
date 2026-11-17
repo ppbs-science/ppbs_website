@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "build": "node js/build.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "validate": "node js/validate.js",
+    "validate:build": "npm run build && npm run validate",
+    "test": "npm run validate:build"
   },
   "keywords": [],
   "author": "",

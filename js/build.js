@@ -599,7 +599,7 @@ function build() {
   // Copy static assets
   console.log('  Copying static assets...');
   copyDirSync(path.join(ROOT, 'css'), path.join(SITE, 'css'));
-  copyDirSync(path.join(ROOT, 'js'), path.join(SITE, 'js'), ['build.js']);
+  copyDirSync(path.join(ROOT, 'js'), path.join(SITE, 'js'), ['build.js', 'validate.js']);
   if (fs.existsSync(path.join(ROOT, 'img'))) {
     copyDirSync(path.join(ROOT, 'img'), path.join(SITE, 'img'));
   }
