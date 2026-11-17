@@ -405,6 +405,21 @@
     ]
   },
   {
+    "name": "Ili Ma",
+    "group": "Funders",
+    "affiliation": "Leiden University",
+    "position": "Assistant Professor of Developmental and Educational Psychology",
+    "photo": "img/team/ili-ma.jpg",
+    "bio": "Assistant Professor of Developmental and Educational Psychology at Leiden University and Principal Investigator of the Cognition in Development Lab. Her research examines how adolescents learn from information, form beliefs, and make decisions, with particular attention to misinformation, social media, and resilience to online manipulation.",
+    "contact": { "url": "https://www.linkedin.com/in/ili-ma-2554b521/", "icon": "linkedin" },
+    "profile": { "url": "https://www.universiteitleiden.nl/en/staffmembers/ili-ma", "icon": "website", "label": "Leiden University profile" },
+    "links": [
+      { "url": "https://ili-ma.github.io/", "icon": "website", "label": "Cognition in Development Lab" },
+      { "url": "https://scholar.google.com/citations?hl=nl&oi=ao&user=cYMcJXUAAAAJ", "icon": "scholar" },
+      { "url": "https://orcid.org/0000-0003-2971-4085", "icon": "orcid" }
+    ]
+  },
+  {
     "name": "Quinnehtukqut McLamore",
     "group": "Researchers",
     "affiliation": "University of Missouri",
