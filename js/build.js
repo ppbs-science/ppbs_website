@@ -101,6 +101,12 @@ const pages = [
     vars: {}
   },
   {
+    id: 'mentorship',
+    template: 'mentorship.html',
+    content: 'mentored-research-programme.md',
+    vars: {}
+  },
+  {
     id: 'get-involved',
     template: 'get-involved.html',
     content: 'get-involved.md',
