@@ -50,6 +50,42 @@ function renderMarkdown(mdContent) {
   return marked.parse(mdContent);
 }
 
+// External sources should open without replacing the PPBS page. Apply this at
+// build time so the behavior does not depend on JavaScript or browser caching.
+function decorateExternalLinks(html) {
+  return html.replace(/<a\b[^>]*\bhref\s*=\s*(["'])(https?:\/\/[^"']+)\1[^>]*>/gi, (tag, quote, href) => {
+    let destination;
+    try {
+      destination = new URL(href);
+    } catch {
+      return tag;
+    }
+
+    if (destination.hostname === 'ppbs.science' || destination.hostname.endsWith('.ppbs.science')) {
+      return tag;
+    }
+
+    let updated = tag;
+    if (/\btarget\s*=\s*(["'])[^"']*\1/i.test(updated)) {
+      updated = updated.replace(/\btarget\s*=\s*(["'])[^"']*\1/i, 'target="_blank"');
+    } else {
+      updated = updated.replace(/>$/, ' target="_blank">');
+    }
+
+    const relMatch = updated.match(/\brel\s*=\s*(["'])([^"']*)\1/i);
+    const relTokens = new Set(relMatch ? relMatch[2].split(/\s+/).filter(Boolean) : []);
+    relTokens.add('noopener');
+    relTokens.add('noreferrer');
+    const relValue = [...relTokens].join(' ');
+    if (relMatch) {
+      updated = updated.replace(/\brel\s*=\s*(["'])[^"']*\1/i, `rel="${relValue}"`);
+    } else {
+      updated = updated.replace(/>$/, ` rel="${relValue}">`);
+    }
+    return updated;
+  });
+}
+
 // --- Page configs ---
 const pages = [
   {
@@ -101,9 +137,21 @@ const pages = [
     vars: {}
   },
   {
+    id: 'contributions',
+    template: 'contributions.html',
+    content: 'contributions.md',
+    vars: {}
+  },
+  {
     id: 'mentorship',
     template: 'mentorship.html',
     content: 'mentored-research-programme.md',
+    vars: {}
+  },
+  {
+    id: 'faq',
+    template: 'faq.html',
+    content: 'faq.md',
     vars: {}
   },
   {
@@ -134,7 +182,7 @@ function buildHomepage() {
     template = template.replace('{{content}}', content);
   }
 
-  fs.writeFileSync(path.join(SITE, 'index.html'), template);
+  fs.writeFileSync(path.join(SITE, 'index.html'), decorateExternalLinks(template));
 }
 
 // --- Build report cards by scanning _site/reports/ subdirectories ---
@@ -223,6 +271,101 @@ function initialsFromName(name) {
   if (parts.length === 0) return '?';
   if (parts.length === 1) return parts[0][0].toUpperCase();
   return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+}
+
+function escapeHTML(value) {
+  return String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function contributionToken(value) {
+  return String(value || '')
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/&/g, ' and ')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
+function contributionOption(value) {
+  return `<option value="${contributionToken(value)}">${escapeHTML(value)}</option>`;
+}
+
+function safeExternalUrl(value) {
+  try {
+    const url = new URL(String(value || ''));
+    return ['http:', 'https:'].includes(url.protocol) ? url.href : '';
+  } catch {
+    return '';
+  }
+}
+
+function buildContributionRegister() {
+  const file = path.join(DATA, 'contributions.json');
+  if (!fs.existsSync(file)) return { records: '', areas: '<option value="">All</option>', countries: '<option value="">All</option>', languages: '<option value="">All</option>', roles: '<option value="">All</option>' };
+
+  const source = readJSON(file);
+  const records = Array.isArray(source.records) ? source.records : [];
+  const byProject = new Map();
+
+  for (const record of records) {
+    const key = contributionToken(record.project_name);
+    if (!byProject.has(key)) {
+      byProject.set(key, {
+        project_name: record.project_name,
+        project_url: record.project_url,
+        funding_statement: record.funding_statement,
+        verification_status: record.verification_status,
+        entries: []
+      });
+    }
+    byProject.get(key).entries.push(record);
+  }
+
+  const projects = [...byProject.values()].sort((a, b) => a.project_name.localeCompare(b.project_name));
+  const allAreas = [...new Set(records.map((r) => r.contribution_area).filter(Boolean))].sort();
+  const allCountries = [...new Set(records.map((r) => r.country).filter(Boolean))].sort();
+  const allLanguages = [...new Set(records.map((r) => r.language).filter(Boolean))].sort();
+  const allRoles = [...new Set(records.flatMap((r) => r.roles || []))].sort();
+
+  const cards = projects.map((project) => {
+    const areas = [...new Set(project.entries.map((r) => r.contribution_area).filter(Boolean))];
+    const countries = [...new Set(project.entries.map((r) => r.country).filter(Boolean))];
+    const languages = [...new Set(project.entries.map((r) => r.language).filter(Boolean))];
+    const roles = [...new Set(project.entries.flatMap((r) => r.roles || []))];
+    const projectUrl = safeExternalUrl(project.project_url);
+    const projectName = projectUrl
+      ? `<a href="${escapeHTML(projectUrl)}" target="_blank" rel="noopener">${escapeHTML(project.project_name)}</a>`
+      : escapeHTML(project.project_name);
+    const funding = project.funding_statement ? `<p class="contribution-funding"><strong>Funding and resources:</strong> ${escapeHTML(project.funding_statement)}</p>` : '';
+    const verification = project.verification_status ? `<p class="contribution-verification"><strong>Evidence status:</strong> ${escapeHTML(project.verification_status)}</p>` : '';
+    const entries = project.entries.sort((a, b) => a.full_name.localeCompare(b.full_name)).map((entry) => {
+      const name = entry.orcid
+        ? `<a href="https://orcid.org/${encodeURIComponent(entry.orcid)}" target="_blank" rel="noopener">${escapeHTML(entry.full_name)}</a>`
+        : escapeHTML(entry.full_name);
+      const context = [entry.contribution_area, entry.country, entry.language, entry.translation_stage].filter(Boolean).map(escapeHTML).join(' · ');
+      const badges = (entry.roles || []).map((role) => `<span>${escapeHTML(role)}</span>`).join('');
+      const affiliation = entry.affiliation ? `<small>${escapeHTML(entry.affiliation)}</small>` : '';
+      return `<li><div><strong>${name}</strong>${affiliation}${context ? `<small>${context}</small>` : ''}</div><div class="contribution-role-badges">${badges}</div></li>`;
+    }).join('');
+    return `<article class="contribution-card" data-areas="${areas.map(contributionToken).join('|')}" data-countries="${countries.map(contributionToken).join('|')}" data-languages="${languages.map(contributionToken).join('|')}" data-roles="${roles.map(contributionToken).join('|')}">
+      <header><h2>${projectName}</h2>${funding}${verification}</header>
+      <ul>${entries}</ul>
+    </article>`;
+  }).join('\n');
+
+  return {
+    records: cards,
+    areas: `<option value="">All contribution areas</option>${allAreas.map(contributionOption).join('')}`,
+    countries: `<option value="">All countries and contexts</option>${allCountries.map(contributionOption).join('')}`,
+    languages: `<option value="">All languages</option>${allLanguages.map(contributionOption).join('')}`,
+    roles: `<option value="">All roles</option>${allRoles.map(contributionOption).join('')}`
+  };
 }
 
 // Render a member's portrait: the photo if its file exists on disk, otherwise
@@ -451,6 +594,15 @@ function buildPage(page) {
   if (page.id === 'investigators') {
     template = template.replace('{{team_cards}}', buildTeamCards());
   }
+  if (page.id === 'contributions') {
+    const contributions = buildContributionRegister();
+    template = template
+      .replace('{{contribution_records}}', contributions.records)
+      .replace('{{area_options}}', contributions.areas)
+      .replace('{{country_options}}', contributions.countries)
+      .replace('{{language_options}}', contributions.languages)
+      .replace('{{role_options}}', contributions.roles);
+  }
   if (page.id === 'constructs') {
     template = template.replace('{{construct_rows}}', buildConstructRows());
   }
@@ -461,7 +613,7 @@ function buildPage(page) {
   // Clean up any remaining template tags
   template = template.replace(/\{\{[^}]+\}\}/g, '');
 
-  fs.writeFileSync(path.join(SITE, `${page.id}.html`), template);
+  fs.writeFileSync(path.join(SITE, `${page.id}.html`), decorateExternalLinks(template));
 }
 
 // --- Strip any existing site chrome from a report page ---------------------
@@ -587,12 +739,33 @@ function injectShellIntoSubdir(subdir, activePage) {
       }
 
       const relPath = path.relative(path.join(SITE), filePath);
-      fs.writeFileSync(filePath, html);
+      fs.writeFileSync(filePath, decorateExternalLinks(html));
       console.log(`  Normalized L6 shell in ${relPath}`);
     }
   }
 
   processDir(dir, 1);
+}
+
+// Report item fragments are embedded by standalone reports and therefore do
+// not receive the full site shell. They still belong to the published site,
+// so apply the external-link policy recursively to every HTML fragment.
+function decorateLinksInSubdir(subdir) {
+  const dir = path.join(SITE, subdir);
+  if (!fs.existsSync(dir)) return;
+
+  function processDir(currentDir) {
+    for (const entry of fs.readdirSync(currentDir, { withFileTypes: true })) {
+      const filePath = path.join(currentDir, entry.name);
+      if (entry.isDirectory()) {
+        processDir(filePath);
+      } else if (entry.name.endsWith('.html')) {
+        fs.writeFileSync(filePath, decorateExternalLinks(read(filePath)));
+      }
+    }
+  }
+
+  processDir(dir);
 }
 
 // --- Main build ---
@@ -605,7 +778,13 @@ function build() {
   // Copy static assets
   console.log('  Copying static assets...');
   copyDirSync(path.join(ROOT, 'css'), path.join(SITE, 'css'));
-  copyDirSync(path.join(ROOT, 'js'), path.join(SITE, 'js'), ['build.js', 'validate.js']);
+  copyDirSync(path.join(ROOT, 'js'), path.join(SITE, 'js'), [
+    'build.js', 'sync-contributions.js', 'test-contributions.js', 'validate.js'
+  ]);
+  for (const serverOnlyScript of ['sync-contributions.js', 'test-contributions.js', 'validate.js']) {
+    const staleCopy = path.join(SITE, 'js', serverOnlyScript);
+    if (fs.existsSync(staleCopy)) fs.unlinkSync(staleCopy);
+  }
   if (fs.existsSync(path.join(ROOT, 'img'))) {
     copyDirSync(path.join(ROOT, 'img'), path.join(SITE, 'img'));
   }
@@ -642,6 +821,8 @@ function build() {
   // Inject L6 shell into methods and reports pages
   injectShellIntoSubdir('methods', 'methodology');
   injectShellIntoSubdir('reports', 'reports');
+  decorateLinksInSubdir('methods');
+  decorateLinksInSubdir('reports');
 
   console.log('Done! Output in _site/');
 }

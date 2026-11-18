@@ -1,0 +1,80 @@
+{
+  "generated_at": "2026-11-18T23:50:00+01:00",
+  "source": "local-evidence-review",
+  "simulated": false,
+  "records": [
+    {
+      "full_name": "Flavio Azevedo", "affiliation": "Utrecht University", "orcid": "", "project_name": "PPBS website and public-report infrastructure", "project_url": "https://ppbs.science/", "contribution_area": "Research infrastructure", "country": "", "language": "", "translation_stage": "",
+      "funding_statement": "PPBS programme resources; the final public acknowledgement wording is under review.",
+      "verification_status": "Roles checked against repository history; contributor confirmation remains required before release.",
+      "roles": ["Conceptualization", "Project administration", "Supervision", "Funding acquisition", "Resources", "Software", "Validation", "Writing – original draft", "Writing – review & editing"]
+    },
+    {
+      "full_name": "Lukas Wallrich", "affiliation": "Birkbeck, University of London", "orcid": "", "project_name": "PPBS website and public-report infrastructure", "project_url": "https://ppbs.science/", "contribution_area": "Research infrastructure", "country": "", "language": "", "translation_stage": "",
+      "roles": ["Software", "Data curation", "Validation", "Visualization", "Methodology", "Research operations"]
+    },
+    {
+      "full_name": "Max Wan", "affiliation": "Psychology of Political Behavior Studies", "orcid": "", "project_name": "PPBS website and public-report infrastructure", "project_url": "https://ppbs.science/", "contribution_area": "Research infrastructure", "country": "", "language": "", "translation_stage": "",
+      "roles": ["Software", "Data curation", "Visualization", "Research operations"]
+    },
+    {
+      "full_name": "Meta van der Linden", "affiliation": "Utrecht University", "orcid": "", "project_name": "PPBS Dutch translation and country adaptation", "project_url": "", "contribution_area": "Translation & country adaptation", "country": "Netherlands", "language": "Dutch", "translation_stage": "Completed team translation",
+      "funding_statement": "Supported through PPBS and associated project resources; exact grant acknowledgement to be verified.",
+      "verification_status": "Completion and workflow documented in team correspondence; names and roles await contributor confirmation.",
+      "roles": ["Translation", "Country adaptation", "Validation", "Writing – review & editing"]
+    },
+    {
+      "full_name": "Tom Nijs", "affiliation": "Erasmus University Rotterdam", "orcid": "", "project_name": "PPBS Dutch translation and country adaptation", "project_url": "", "contribution_area": "Translation & country adaptation", "country": "Netherlands", "language": "Dutch", "translation_stage": "Completed team translation",
+      "roles": ["Translation", "Country adaptation", "Validation", "Writing – review & editing"]
+    },
+    {
+      "full_name": "Kim Schormans", "affiliation": "", "orcid": "", "project_name": "PPBS Dutch translation and country adaptation", "project_url": "", "contribution_area": "Translation & country adaptation", "country": "Netherlands", "language": "Dutch", "translation_stage": "Completed team translation",
+      "roles": ["Translation", "Country adaptation", "Validation", "Writing – review & editing"]
+    },
+    {
+      "full_name": "Flavio Azevedo", "affiliation": "Utrecht University", "orcid": "", "project_name": "PPBS Dutch translation and country adaptation", "project_url": "", "contribution_area": "Project leadership", "country": "Netherlands", "language": "Dutch", "translation_stage": "Completed team translation",
+      "roles": ["Conceptualization", "Project administration", "Supervision", "Country coordination", "Funding acquisition", "Resources"]
+    },
+    {
+      "full_name": "Gaëlle Marinthe", "affiliation": "Université Clermont Auvergne", "orcid": "", "project_name": "PPBS French-Belgian translation and country adaptation", "project_url": "", "contribution_area": "Translation & country adaptation", "country": "Belgium / France", "language": "French", "translation_stage": "Final translation files delivered",
+      "funding_statement": "Supported through PPBS and country-team resources; public acknowledgement wording is under review.",
+      "verification_status": "Final files and team correspondence identify the translation team; names and roles await contributor confirmation.",
+      "roles": ["Translation", "Country adaptation", "Political/context review", "Validation", "Writing – review & editing"]
+    },
+    {
+      "full_name": "Olivier Klein", "affiliation": "Université libre de Bruxelles", "orcid": "", "project_name": "PPBS French-Belgian translation and country adaptation", "project_url": "", "contribution_area": "Translation & country adaptation", "country": "Belgium / France", "language": "French", "translation_stage": "Final translation files delivered",
+      "roles": ["Translation", "Country adaptation", "Political/context review", "Validation", "Writing – review & editing"]
+    },
+    {
+      "full_name": "Paul Bertin", "affiliation": "", "orcid": "", "project_name": "PPBS French-Belgian translation and country adaptation", "project_url": "", "contribution_area": "Translation & country adaptation", "country": "Belgium / France", "language": "French", "translation_stage": "Final translation files delivered",
+      "roles": ["Translation", "Country adaptation", "Political/context review", "Validation", "Writing – review & editing"]
+    },
+    {
+      "full_name": "Flavio Azevedo", "affiliation": "Utrecht University", "orcid": "", "project_name": "PPBS French-Belgian translation and country adaptation", "project_url": "", "contribution_area": "Project leadership", "country": "Belgium / France", "language": "French", "translation_stage": "Final translation files delivered",
+      "roles": ["Conceptualization", "Project administration", "Supervision", "Country coordination", "Funding acquisition", "Resources"]
+    },
+    {
+      "full_name": "Flavio Azevedo", "affiliation": "Utrecht University", "orcid": "", "project_name": "PPBS programme funding and resource support", "project_url": "", "contribution_area": "Funding & resources", "country": "", "language": "", "translation_stage": "",
+      "funding_statement": "PPBS has combined PI resources and financial or in-kind support from collaborating investigators and institutions. No private amounts are displayed.",
+      "verification_status": "Support is checked against the private finance reconciliation; public naming and wording still require consent confirmation.",
+      "roles": ["Funding acquisition", "Funding support", "Resources", "Conceptualization", "Project administration", "Supervision"]
+    },
+    {"full_name":"Andre Kaiser","affiliation":"University of Cologne","orcid":"","project_name":"PPBS programme funding and resource support","project_url":"","contribution_area":"Funding & resources","country":"","language":"","translation_stage":"","roles":["Funding support","Resources"]},
+    {"full_name":"Gijs Schumacher","affiliation":"University of Amsterdam","orcid":"","project_name":"PPBS programme funding and resource support","project_url":"","contribution_area":"Funding & resources","country":"","language":"","translation_stage":"","roles":["Funding support","Resources"]},
+    {"full_name":"Joe Vitriol","affiliation":"Lehigh University","orcid":"","project_name":"PPBS programme funding and resource support","project_url":"","contribution_area":"Funding & resources","country":"","language":"","translation_stage":"","roles":["Funding support","Resources"]},
+    {"full_name":"Robert Ross","affiliation":"Macquarie University","orcid":"","project_name":"PPBS programme funding and resource support","project_url":"","contribution_area":"Funding & resources","country":"","language":"","translation_stage":"","roles":["Funding support","Resources"]},
+    {"full_name":"Marcel Lubbers","affiliation":"Utrecht University","orcid":"","project_name":"PPBS programme funding and resource support","project_url":"","contribution_area":"Funding & resources","country":"","language":"","translation_stage":"","roles":["Funding support","Resources"]},
+    {"full_name":"Manos Tsakiris","affiliation":"Royal Holloway, University of London","orcid":"","project_name":"PPBS programme funding and resource support","project_url":"","contribution_area":"Funding & resources","country":"","language":"","translation_stage":"","roles":["Funding support","Resources"]},
+    {"full_name":"Han van der Maas","affiliation":"University of Amsterdam","orcid":"","project_name":"PPBS programme funding and resource support","project_url":"","contribution_area":"Funding & resources","country":"","language":"","translation_stage":"","roles":["Funding support","Resources"]},
+    {"full_name":"Quinnehtukqut McLamore","affiliation":"University of Missouri","orcid":"","project_name":"PPBS programme funding and resource support","project_url":"","contribution_area":"Funding & resources","country":"","language":"","translation_stage":"","roles":["Funding support","Resources"]},
+    {"full_name":"Ili Ma","affiliation":"Leiden University","orcid":"","project_name":"PPBS programme funding and resource support","project_url":"","contribution_area":"Funding & resources","country":"","language":"","translation_stage":"","roles":["Funding support","Resources"]},
+    {"full_name":"Olivier Klein","affiliation":"Université libre de Bruxelles","orcid":"","project_name":"PPBS programme funding and resource support","project_url":"","contribution_area":"Funding & resources","country":"","language":"","translation_stage":"","roles":["Funding support","Resources"]},
+    {"full_name":"Gaëlle Marinthe","affiliation":"Université Clermont Auvergne","orcid":"","project_name":"PPBS programme funding and resource support","project_url":"","contribution_area":"Funding & resources","country":"","language":"","translation_stage":"","roles":["Funding support","Resources"]},
+    {
+      "full_name": "Flavio Azevedo", "affiliation": "Utrecht University", "orcid": "", "project_name": "Flagship PPBS manuscript", "project_url": "", "contribution_area": "Manuscript", "country": "", "language": "English", "translation_stage": "",
+      "funding_statement": "PPBS programme funding and resources; manuscript-specific acknowledgement wording remains to be finalized.",
+      "verification_status": "Initial Tenzing record. The manuscript repository was unavailable for review, so additional contributors and output-specific roles are intentionally not inferred.",
+      "roles": ["Conceptualization", "Funding acquisition", "Project administration", "Resources", "Supervision", "Writing – original draft", "Writing – review & editing"]
+    }
+  ]
+}

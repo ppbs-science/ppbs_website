@@ -117,6 +117,24 @@ function validateJsonData() {
       names.add(construct.name);
     }
   }
+
+  const contributions = parsed['contributions.json'];
+  if (!contributions || !Array.isArray(contributions.records)) {
+    fail('contributions.json: expected an object with a records array');
+  } else {
+    for (const record of contributions.records) {
+      if (!record.full_name || !record.project_name || !Array.isArray(record.roles) || !record.roles.length) {
+        fail('contributions.json: every public record needs full_name, project_name, and at least one role');
+      }
+      if (record.project_url && !/^https?:\/\//i.test(record.project_url)) {
+        fail(`contributions.json: unsafe project URL for ${record.full_name}`);
+      }
+      const forbidden = ['email', 'funding', 'conflict_of_interest', 'secondary_affiliation'];
+      for (const key of forbidden) {
+        if (Object.hasOwn(record, key)) fail(`contributions.json: public cache must not contain ${key}`);
+      }
+    }
+  }
 }
 
 function stripSuffix(value) {
@@ -167,10 +185,38 @@ function validateLocalReferences() {
   for (const item of broken) fail(`broken local reference: ${item}`);
 }
 
+function validateExternalLinkSafety() {
+  const htmlFiles = walk(SITE, (file) => file.endsWith('.html'));
+  const anchorPattern = /<a\b[^>]*\bhref\s*=\s*(["'])(https?:\/\/[^"']+)\1[^>]*>/gi;
+
+  for (const htmlFile of htmlFiles) {
+    const html = fs.readFileSync(htmlFile, 'utf8');
+    let match;
+    while ((match = anchorPattern.exec(html)) !== null) {
+      const tag = match[0];
+      const href = match[2];
+      let destination;
+      try {
+        destination = new URL(href);
+      } catch {
+        continue;
+      }
+      if (destination.hostname === 'ppbs.science' || destination.hostname.endsWith('.ppbs.science')) continue;
+
+      const target = tag.match(/\btarget\s*=\s*(["'])([^"']*)\1/i)?.[2];
+      const rel = tag.match(/\brel\s*=\s*(["'])([^"']*)\1/i)?.[2].split(/\s+/) || [];
+      if (target !== '_blank' || !rel.includes('noopener') || !rel.includes('noreferrer')) {
+        fail(`${path.relative(ROOT, htmlFile)}: unsafe external link attributes for ${href}`);
+      }
+    }
+  }
+}
+
 function validateBuildOutput() {
   const required = [
     'index.html', 'investigators.html', 'methodology.html', 'publications.html',
-    'reports.html', 'constructs.html', 'css/l6.css', 'js/nav.js'
+    'reports.html', 'constructs.html', 'contributions.html', 'mentorship.html', 'faq.html', 'css/l6.css',
+    'js/nav.js', 'js/contributions.js'
   ];
   for (const item of required) {
     if (!exists(item, SITE)) fail(`missing build output: _site/${item}`);
@@ -194,6 +240,7 @@ function validateBuildOutput() {
 validateJsonData();
 validateBuildOutput();
 validateLocalReferences();
+validateExternalLinkSafety();
 
 for (const message of warnings) console.warn(`WARNING: ${message}`);
 if (errors.length) {

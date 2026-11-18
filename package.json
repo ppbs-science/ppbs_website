@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "node js/build.js",
+    "sync:contributions": "node js/sync-contributions.js",
+    "build": "npm run sync:contributions && node js/build.js",
+    "test:contributions": "node js/test-contributions.js",
     "validate": "node js/validate.js",
     "validate:build": "npm run build && npm run validate",
-    "test": "npm run validate:build"
+    "test": "npm run test:contributions && npm run validate:build"
   },
   "keywords": [],
   "author": "",
