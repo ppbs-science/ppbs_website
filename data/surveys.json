@@ -1,5 +1,5 @@
 [
-  {"id": "ppbs2016", "title": "PPBS 2016", "category": "Cross-section", "description": "2016 US election nationally representative cross-section", "report": "methods/ppbs2016.html"},
+  {"id": "ppbs2016", "title": "PPBS 2016", "category": "Cross-section", "description": "2016 U.S. election national quota cross-section", "report": "methods/ppbs2016.html"},
   {"id": "ppbs2018_pre", "title": "PPBS 2018 Pre", "category": "Cross-section", "description": "2018 US midterm pre-election cross-section", "report": "methods/ppbs2018_pre.html"},
   {"id": "ppbs2018_post", "title": "PPBS 2018 Post", "category": "Cross-section", "description": "2018 US midterm post-election cross-section", "report": "methods/ppbs2018_post.html"},
   {"id": "ppbs2020_pre", "title": "PPBS 2020 Pre", "category": "Cross-section", "description": "2020 US election pre-election cross-section", "report": "methods/ppbs2020_pre.html"},

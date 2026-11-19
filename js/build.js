@@ -174,7 +174,7 @@ function buildHomepage() {
     .replace('{{stat_constructs}}', stats.constructs)
     .replace('{{stat_datasets}}', stats.datasets)
     .replace('{{stat_cycles}}', stats.cycles)
-    .replace('{{stat_countries}}', stats.countries);
+    .replace('{{stat_designs}}', stats.designs);
 
   const mdFile = path.join(CONTENT, 'index.md');
   if (fs.existsSync(mdFile)) {
