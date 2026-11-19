@@ -10,16 +10,39 @@
 <body data-page="motivation">
 
 <div class="topbar">
-  <div class="mark"><a href="index.html">P<em>PB</em>S</a><button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button></div>
-  <nav>
-    <a href="motivation.html" data-page="motivation">Motivation</a>
-    <a href="constructs.html" data-page="constructs">Constructs</a>
-    <a href="methodology.html" data-page="methodology">Methodology</a>
-    <a href="reports.html" data-page="reports">Reports</a>
-    <a href="publications.html" data-page="publications">Publications</a>
-    <a href="investigators.html" data-page="investigators">Investigators</a>
-    <a href="get-involved.html" data-page="get-involved">Get Involved / Access Data</a>
-    <a class="nav-github" href="https://github.com/ppbs-science/ppbs_demo" target="_blank" rel="noopener" title="View this project on GitHub" aria-label="View this project on GitHub"><svg viewBox="0 0 16 16" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a>
+  <div class="mark"><a href="index.html">P<em>PB</em>S</a><button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button></div>
+  <nav aria-label="Primary navigation">
+    <div class="nav-group">
+      <button class="nav-group__trigger" type="button" aria-expanded="false">About <span aria-hidden="true">+</span></button>
+      <div class="nav-group__menu">
+        <a href="motivation.html" data-page="motivation"><strong>What is PPBS?</strong><small>Purpose, history, and rationale</small></a>
+        <a href="faq.html" data-page="faq"><strong>Questions & answers</strong><small>Data, access, projects, and governance</small></a>
+      </div>
+    </div>
+    <div class="nav-group">
+      <button class="nav-group__trigger" type="button" aria-expanded="false">Research <span aria-hidden="true">+</span></button>
+      <div class="nav-group__menu nav-group__menu--wide">
+        <a href="constructs.html" data-page="constructs"><strong>Constructs</strong><small>What PPBS measures</small></a>
+        <a href="methodology.html" data-page="methodology"><strong>Methodology</strong><small>Samples, surveys, and design</small></a>
+        <a href="reports.html" data-page="reports"><strong>Reports</strong><small>Interactive research outputs</small></a>
+        <a href="publications.html" data-page="publications"><strong>Publications</strong><small>Papers, preprints, and media</small></a>
+      </div>
+    </div>
+    <div class="nav-group">
+      <button class="nav-group__trigger" type="button" aria-expanded="false">People & credit <span aria-hidden="true">+</span></button>
+      <div class="nav-group__menu">
+        <a href="investigators.html" data-page="investigators"><strong>People</strong><small>Researchers, partners, and supporters</small></a>
+        <a href="contributions.html" data-page="contributions"><strong>Contributions</strong><small>Public roles and research credit</small></a>
+      </div>
+    </div>
+    <div class="nav-group">
+      <button class="nav-group__trigger" type="button" aria-expanded="false">Take part <span aria-hidden="true">+</span></button>
+      <div class="nav-group__menu nav-group__menu--right">
+        <a href="mentorship.html" data-page="mentorship"><strong>Mentored research</strong><small>Lead a supported PPBS project</small></a>
+        <a href="get-involved.html" data-page="get-involved"><strong>Get involved / access data</strong><small>Collaborate, contribute, or enquire</small></a>
+      </div>
+    </div>
+    <a class="nav-github" href="https://github.com/ppbs-science/ppbs_demo" target="_blank" rel="noopener noreferrer" title="View this project on GitHub" aria-label="View this project on GitHub"><svg viewBox="0 0 16 16" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a>
   </nav>
 </div>
 
@@ -65,43 +88,43 @@
 </div>
 
 <h2>Why PPBS?</h2>
-<p>Political science and psychology often study the same political phenomena with different tools. Political science contributes strong traditions in election surveys, population-focused sampling, and behavioral measurement; psychology contributes validated multi-item scales, psychometrics, and theories of motivation and identity. PPBS brings these strengths into one design, continuing a long-standing call for more integrative political psychology (<a href="https://doi.org/10.1111/j.1467-9221.2011.00868.x">Haste, 2012</a>; <a href="https://doi.org/10.1093/oxfordhb/9780199760107.013.0001">Huddy, Sears, &amp; Levy, 2013</a>; <a href="https://doi.org/10.1046/j.1468-5914.2003.00225.x">Rosenberg, 2003</a>).</p>
+<p>Political science and psychology often study the same political phenomena with different tools. Political science contributes strong traditions in election surveys, population-focused sampling, and behavioral measurement; psychology contributes validated multi-item scales, psychometrics, and theories of motivation and identity. PPBS brings these strengths into one design, continuing a long-standing call for more integrative political psychology (<a href="https://doi.org/10.1111/j.1467-9221.2011.00868.x" target="_blank" rel="noopener noreferrer">Haste, 2012</a>; <a href="https://doi.org/10.1093/oxfordhb/9780199760107.013.0001" target="_blank" rel="noopener noreferrer">Huddy, Sears, &amp; Levy, 2013</a>; <a href="https://doi.org/10.1046/j.1468-5914.2003.00225.x" target="_blank" rel="noopener noreferrer">Rosenberg, 2003</a>).</p>
 <p>Its exploratory and confirmatory structure also responds to credibility concerns across the social sciences. Survey instruments are fielded in separate samples drawn from the same source, allowing promising associations to be tested again before they are treated as robust. Longitudinal recontacts add a further test: whether relationships observed between people are also visible as people change over time.</p>
 <h3>1. Build and compare theory</h3>
-<p>Political behavior can rarely be explained by a single construct. PPBS places competing explanations in the same dataset so researchers can compare their reach, overlap, and limits. This addresses what <a href="https://osc.centerforopenscience.org/2013/11/20/theoretical-amnesia/">Borsboom (2013)</a> called “theoretical amnesia” and supports more deliberate theory construction (<a href="https://doi.org/10.1177/1745691620969647">Borsboom et al., 2021</a>; <a href="https://doi.org/10.1038/s41562-018-0522-1">Muthukrishna &amp; Henrich, 2019</a>; <a href="https://doi.org/10.3758/s13423-019-01645-2">Oberauer &amp; Lewandowsky, 2019</a>). It also offers a practical response to psychology&#39;s “toothbrush problem”: the tendency to prefer one&#39;s own theory to anyone else&#39;s (<a href="https://www.psychologicalscience.org/observer/the-toothbrush-problem">Mischel, 2008</a>).</p>
+<p>Political behavior can rarely be explained by a single construct. PPBS places competing explanations in the same dataset so researchers can compare their reach, overlap, and limits. This addresses what <a href="https://osc.centerforopenscience.org/2013/11/20/theoretical-amnesia/" target="_blank" rel="noopener noreferrer">Borsboom (2013)</a> called “theoretical amnesia” and supports more deliberate theory construction (<a href="https://doi.org/10.1177/1745691620969647" target="_blank" rel="noopener noreferrer">Borsboom et al., 2021</a>; <a href="https://doi.org/10.1038/s41562-018-0522-1" target="_blank" rel="noopener noreferrer">Muthukrishna &amp; Henrich, 2019</a>; <a href="https://doi.org/10.3758/s13423-019-01645-2" target="_blank" rel="noopener noreferrer">Oberauer &amp; Lewandowsky, 2019</a>). It also offers a practical response to psychology&#39;s “toothbrush problem”: the tendency to prefer one&#39;s own theory to anyone else&#39;s (<a href="https://www.psychologicalscience.org/observer/the-toothbrush-problem" target="_blank" rel="noopener noreferrer">Mischel, 2008</a>).</p>
 <h3>2. Study large, diverse samples</h3>
-<p>Large national quota samples improve precision and make heterogeneity across demographic and political groups visible. They also help address the persistent problem of underpowered studies in psychology (<a href="https://doi.org/10.1037/1082-989X.9.2.147">Maxwell, 2004</a>; <a href="https://doi.org/10.3389/fpsyg.2017.01184">Crutzen &amp; Peters, 2017</a>) while avoiding claims that quota sampling alone guarantees perfect population representation.</p>
+<p>Large national quota samples improve precision and make heterogeneity across demographic and political groups visible. They also help address the persistent problem of underpowered studies in psychology (<a href="https://doi.org/10.1037/1082-989X.9.2.147" target="_blank" rel="noopener noreferrer">Maxwell, 2004</a>; <a href="https://doi.org/10.3389/fpsyg.2017.01184" target="_blank" rel="noopener noreferrer">Crutzen &amp; Peters, 2017</a>) while avoiding claims that quota sampling alone guarantees perfect population representation.</p>
 <h3>3. Use stronger measurement</h3>
-<p>Single items and convenient proxies can introduce avoidable measurement error and give researchers too many degrees of freedom. PPBS therefore prioritizes validated multi-item instruments and documents how constructs are operationalized, responding directly to calls to treat measurement as a central part of theory testing (<a href="https://www.psychologicalscience.org/observer/measurement-matters">Fried &amp; Flake, 2018</a>).</p>
+<p>Single items and convenient proxies can introduce avoidable measurement error and give researchers too many degrees of freedom. PPBS therefore prioritizes validated multi-item instruments and documents how constructs are operationalized, responding directly to calls to treat measurement as a central part of theory testing (<a href="https://www.psychologicalscience.org/observer/measurement-matters" target="_blank" rel="noopener noreferrer">Fried &amp; Flake, 2018</a>).</p>
 <h3>4. Map nomological networks</h3>
-<p>Psychological constructs gain meaning through their relationships with other constructs. By measuring identities, motives, values, attitudes, and behavior together, PPBS lets researchers map those networks, test discriminant validity, and examine whether rival theories describe distinct processes or different views of the same process (<a href="https://doi.org/10.1046/j.1468-5914.2003.00225.x">Rosenberg, 2003</a>; <a href="https://doi.org/10.4324/9781315173726-14">Smaldino, 2017</a>).</p>
+<p>Psychological constructs gain meaning through their relationships with other constructs. By measuring identities, motives, values, attitudes, and behavior together, PPBS lets researchers map those networks, test discriminant validity, and examine whether rival theories describe distinct processes or different views of the same process (<a href="https://doi.org/10.1046/j.1468-5914.2003.00225.x" target="_blank" rel="noopener noreferrer">Rosenberg, 2003</a>; <a href="https://doi.org/10.4324/9781315173726-14" target="_blank" rel="noopener noreferrer">Smaldino, 2017</a>).</p>
 <h3>5. Test reproducibility</h3>
-<p>Independent confirmatory samples help distinguish stable findings from sample-specific results. That principle follows the credibility reforms in psychology and political science (<a href="https://doi.org/10.1177/1745691617751884">Vazire, 2018</a>; <a href="https://doi.org/10.1007/s11615-018-0131-7">Wuttke, 2019</a>) and the broader evidence on replication across the social sciences (<a href="https://doi.org/10.1126/science.aaf0918">Camerer et al., 2016</a>; <a href="https://doi.org/10.1177/0959354314529616">Klein, 2014</a>).</p>
+<p>Independent confirmatory samples help distinguish stable findings from sample-specific results. That principle follows the credibility reforms in psychology and political science (<a href="https://doi.org/10.1177/1745691617751884" target="_blank" rel="noopener noreferrer">Vazire, 2018</a>; <a href="https://doi.org/10.1007/s11615-018-0131-7" target="_blank" rel="noopener noreferrer">Wuttke, 2019</a>) and the broader evidence on replication across the social sciences (<a href="https://doi.org/10.1126/science.aaf0918" target="_blank" rel="noopener noreferrer">Camerer et al., 2016</a>; <a href="https://doi.org/10.1177/0959354314529616" target="_blank" rel="noopener noreferrer">Klein, 2014</a>).</p>
 <h3>6. Benchmark effects</h3>
-<p>Realistic effect-size estimates are essential for power analyses, preregistrations, and registered reports. PPBS provides large-sample benchmarks while keeping the size of typical psychological effects—and the biases that can inflate them—in view (<a href="https://doi.org/10.3389/fpsyg.2019.00813">Schäfer &amp; Schwarz, 2019</a>).</p>
+<p>Realistic effect-size estimates are essential for power analyses, preregistrations, and registered reports. PPBS provides large-sample benchmarks while keeping the size of typical psychological effects—and the biases that can inflate them—in view (<a href="https://doi.org/10.3389/fpsyg.2019.00813" target="_blank" rel="noopener noreferrer">Schäfer &amp; Schwarz, 2019</a>).</p>
 <h3>7. Support cumulative science</h3>
-<p>Shared measures, transparent documentation, repeated sampling, and longitudinal recontacts make findings easier to compare, replicate, and extend. The goal is not one definitive dataset, but durable research infrastructure that helps political scientists and psychologists build knowledge together (<a href="https://doi.org/10.2307/420301">King, 1995</a>; <a href="https://doi.org/10.4324/9781315173726-14">Smaldino, 2017</a>).</p>
+<p>Shared measures, transparent documentation, repeated sampling, and longitudinal recontacts make findings easier to compare, replicate, and extend. The goal is not one definitive dataset, but durable research infrastructure that helps political scientists and psychologists build knowledge together (<a href="https://doi.org/10.2307/420301" target="_blank" rel="noopener noreferrer">King, 1995</a>; <a href="https://doi.org/10.4324/9781315173726-14" target="_blank" rel="noopener noreferrer">Smaldino, 2017</a>).</p>
 <h2>References</h2>
 <div class="reference-list">
 
-<p>Borsboom, D. (2013, November 20). <a href="https://osc.centerforopenscience.org/2013/11/20/theoretical-amnesia/">Theoretical amnesia</a>. <em>Open Science Collaboration Blog</em>.</p>
-<p>Borsboom, D., van der Maas, H. L. J., Dalege, J., Kievit, R. A., &amp; Haig, B. D. (2021). <a href="https://doi.org/10.1177/1745691620969647">Theory construction methodology: A practical framework for building theories in psychology</a>. <em>Perspectives on Psychological Science, 16</em>(4), 756–766.</p>
-<p>Camerer, C. F., et al. (2016). <a href="https://doi.org/10.1126/science.aaf0918">Evaluating replicability of laboratory experiments in economics</a>. <em>Science, 351</em>(6280), 1433–1436.</p>
-<p>Crutzen, R., &amp; Peters, G. J. Y. (2017). <a href="https://doi.org/10.3389/fpsyg.2017.01184">Targeting next generations to change the common practice of underpowered research</a>. <em>Frontiers in Psychology, 8</em>, 1184.</p>
-<p>Fried, E. I., &amp; Flake, J. K. (2018, March 30). <a href="https://www.psychologicalscience.org/observer/measurement-matters">Measurement matters</a>. <em>APS Observer</em>.</p>
-<p>Haste, H. (2012). <a href="https://doi.org/10.1111/j.1467-9221.2011.00868.x">Where do we go from here in political psychology?</a> <em>Political Psychology, 33</em>(1), 1–9.</p>
-<p>Huddy, L., Sears, D. O., &amp; Levy, J. S. (2013). <a href="https://doi.org/10.1093/oxfordhb/9780199760107.013.0001">Introduction: Theoretical foundations of political psychology</a>. In L. Huddy, D. O. Sears, &amp; J. S. Levy (Eds.), <em>The Oxford Handbook of Political Psychology</em> (2nd ed., pp. 1–20). Oxford University Press.</p>
-<p>King, G. (1995). <a href="https://doi.org/10.2307/420301">Replication, replication</a>. <em>PS: Political Science &amp; Politics, 28</em>(3), 444–452.</p>
-<p>Klein, S. B. (2014). <a href="https://doi.org/10.1177/0959354314529616">What can recent replication failures tell us about the theoretical commitments of psychology?</a> <em>Theory &amp; Psychology, 24</em>(3), 326–338.</p>
-<p>Maxwell, S. E. (2004). <a href="https://doi.org/10.1037/1082-989X.9.2.147">The persistence of underpowered studies in psychological research: Causes, consequences, and remedies</a>. <em>Psychological Methods, 9</em>(2), 147–163.</p>
-<p>Mischel, W. (2008, December 1). <a href="https://www.psychologicalscience.org/observer/the-toothbrush-problem">The toothbrush problem</a>. <em>Observer, 21</em>(11).</p>
-<p>Muthukrishna, M., &amp; Henrich, J. (2019). <a href="https://doi.org/10.1038/s41562-018-0522-1">A problem in theory</a>. <em>Nature Human Behaviour, 3</em>, 221–229.</p>
-<p>Oberauer, K., &amp; Lewandowsky, S. (2019). <a href="https://doi.org/10.3758/s13423-019-01645-2">Addressing the theory crisis in psychology</a>. <em>Psychonomic Bulletin &amp; Review, 26</em>, 1596–1618.</p>
-<p>Rosenberg, S. W. (2003). <a href="https://doi.org/10.1046/j.1468-5914.2003.00225.x">Theorizing political psychology: Doing integrative social science under the condition of postmodernity</a>. <em>Journal for the Theory of Social Behaviour, 33</em>(4), 427–459.</p>
-<p>Schäfer, T., &amp; Schwarz, M. A. (2019). <a href="https://doi.org/10.3389/fpsyg.2019.00813">The meaningfulness of effect sizes in psychological research: Differences between sub-disciplines and the impact of potential biases</a>. <em>Frontiers in Psychology, 10</em>, 813.</p>
-<p>Smaldino, P. E. (2017). <a href="https://doi.org/10.4324/9781315173726-14">Models are stupid, and we need more of them</a>. In R. R. Vallacher, S. J. Read, &amp; A. Nowak (Eds.), <em>Computational Social Psychology</em> (pp. 311–331). Psychology Press.</p>
-<p>Vazire, S. (2018). <a href="https://doi.org/10.1177/1745691617751884">Implications of the credibility revolution for productivity, creativity, and progress</a>. <em>Perspectives on Psychological Science, 13</em>(4), 411–417.</p>
-<p>Wuttke, A. (2019). <a href="https://doi.org/10.1007/s11615-018-0131-7">Why too many political science findings cannot be trusted and what we can do about it: A review of meta-scientific research and a call for academic reform</a>. <em>Politische Vierteljahresschrift, 60</em>(1), 1–19.</p>
+<p>Borsboom, D. (2013, November 20). <a href="https://osc.centerforopenscience.org/2013/11/20/theoretical-amnesia/" target="_blank" rel="noopener noreferrer">Theoretical amnesia</a>. <em>Open Science Collaboration Blog</em>.</p>
+<p>Borsboom, D., van der Maas, H. L. J., Dalege, J., Kievit, R. A., &amp; Haig, B. D. (2021). <a href="https://doi.org/10.1177/1745691620969647" target="_blank" rel="noopener noreferrer">Theory construction methodology: A practical framework for building theories in psychology</a>. <em>Perspectives on Psychological Science, 16</em>(4), 756–766.</p>
+<p>Camerer, C. F., et al. (2016). <a href="https://doi.org/10.1126/science.aaf0918" target="_blank" rel="noopener noreferrer">Evaluating replicability of laboratory experiments in economics</a>. <em>Science, 351</em>(6280), 1433–1436.</p>
+<p>Crutzen, R., &amp; Peters, G. J. Y. (2017). <a href="https://doi.org/10.3389/fpsyg.2017.01184" target="_blank" rel="noopener noreferrer">Targeting next generations to change the common practice of underpowered research</a>. <em>Frontiers in Psychology, 8</em>, 1184.</p>
+<p>Fried, E. I., &amp; Flake, J. K. (2018, March 30). <a href="https://www.psychologicalscience.org/observer/measurement-matters" target="_blank" rel="noopener noreferrer">Measurement matters</a>. <em>APS Observer</em>.</p>
+<p>Haste, H. (2012). <a href="https://doi.org/10.1111/j.1467-9221.2011.00868.x" target="_blank" rel="noopener noreferrer">Where do we go from here in political psychology?</a> <em>Political Psychology, 33</em>(1), 1–9.</p>
+<p>Huddy, L., Sears, D. O., &amp; Levy, J. S. (2013). <a href="https://doi.org/10.1093/oxfordhb/9780199760107.013.0001" target="_blank" rel="noopener noreferrer">Introduction: Theoretical foundations of political psychology</a>. In L. Huddy, D. O. Sears, &amp; J. S. Levy (Eds.), <em>The Oxford Handbook of Political Psychology</em> (2nd ed., pp. 1–20). Oxford University Press.</p>
+<p>King, G. (1995). <a href="https://doi.org/10.2307/420301" target="_blank" rel="noopener noreferrer">Replication, replication</a>. <em>PS: Political Science &amp; Politics, 28</em>(3), 444–452.</p>
+<p>Klein, S. B. (2014). <a href="https://doi.org/10.1177/0959354314529616" target="_blank" rel="noopener noreferrer">What can recent replication failures tell us about the theoretical commitments of psychology?</a> <em>Theory &amp; Psychology, 24</em>(3), 326–338.</p>
+<p>Maxwell, S. E. (2004). <a href="https://doi.org/10.1037/1082-989X.9.2.147" target="_blank" rel="noopener noreferrer">The persistence of underpowered studies in psychological research: Causes, consequences, and remedies</a>. <em>Psychological Methods, 9</em>(2), 147–163.</p>
+<p>Mischel, W. (2008, December 1). <a href="https://www.psychologicalscience.org/observer/the-toothbrush-problem" target="_blank" rel="noopener noreferrer">The toothbrush problem</a>. <em>Observer, 21</em>(11).</p>
+<p>Muthukrishna, M., &amp; Henrich, J. (2019). <a href="https://doi.org/10.1038/s41562-018-0522-1" target="_blank" rel="noopener noreferrer">A problem in theory</a>. <em>Nature Human Behaviour, 3</em>, 221–229.</p>
+<p>Oberauer, K., &amp; Lewandowsky, S. (2019). <a href="https://doi.org/10.3758/s13423-019-01645-2" target="_blank" rel="noopener noreferrer">Addressing the theory crisis in psychology</a>. <em>Psychonomic Bulletin &amp; Review, 26</em>, 1596–1618.</p>
+<p>Rosenberg, S. W. (2003). <a href="https://doi.org/10.1046/j.1468-5914.2003.00225.x" target="_blank" rel="noopener noreferrer">Theorizing political psychology: Doing integrative social science under the condition of postmodernity</a>. <em>Journal for the Theory of Social Behaviour, 33</em>(4), 427–459.</p>
+<p>Schäfer, T., &amp; Schwarz, M. A. (2019). <a href="https://doi.org/10.3389/fpsyg.2019.00813" target="_blank" rel="noopener noreferrer">The meaningfulness of effect sizes in psychological research: Differences between sub-disciplines and the impact of potential biases</a>. <em>Frontiers in Psychology, 10</em>, 813.</p>
+<p>Smaldino, P. E. (2017). <a href="https://doi.org/10.4324/9781315173726-14" target="_blank" rel="noopener noreferrer">Models are stupid, and we need more of them</a>. In R. R. Vallacher, S. J. Read, &amp; A. Nowak (Eds.), <em>Computational Social Psychology</em> (pp. 311–331). Psychology Press.</p>
+<p>Vazire, S. (2018). <a href="https://doi.org/10.1177/1745691617751884" target="_blank" rel="noopener noreferrer">Implications of the credibility revolution for productivity, creativity, and progress</a>. <em>Perspectives on Psychological Science, 13</em>(4), 411–417.</p>
+<p>Wuttke, A. (2019). <a href="https://doi.org/10.1007/s11615-018-0131-7" target="_blank" rel="noopener noreferrer">Why too many political science findings cannot be trusted and what we can do about it: A review of meta-scientific research and a call for academic reform</a>. <em>Politische Vierteljahresschrift, 60</em>(1), 1–19.</p>
 </div>
 
   </div>
@@ -114,8 +137,8 @@
     <span class="f-profile">
       <span>PI: Flavio Azevedo</span>
       <span class="f-profile-links">
-        <a href="https://www.linkedin.com/in/flavio-azevedo-571a371aa" target="_blank" rel="noopener" aria-label="Flavio Azevedo on LinkedIn">LinkedIn</a>
-        <a href="https://flavioazevedo.com/" target="_blank" rel="noopener" aria-label="Flavio Azevedo's website">Website</a>
+        <a href="https://www.linkedin.com/in/flavio-azevedo-571a371aa" target="_blank" rel="noopener noreferrer" aria-label="Flavio Azevedo on LinkedIn">LinkedIn</a>
+        <a href="https://flavioazevedo.com/" target="_blank" rel="noopener noreferrer" aria-label="Flavio Azevedo's website">Website</a>
       </span>
     </span>
   </div>

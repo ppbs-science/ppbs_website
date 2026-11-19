@@ -10,16 +10,39 @@
 <body data-page="publications">
 
 <div class="topbar">
-  <div class="mark"><a href="index.html">P<em>PB</em>S</a><button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button></div>
-  <nav>
-    <a href="motivation.html" data-page="motivation">Motivation</a>
-    <a href="constructs.html" data-page="constructs">Constructs</a>
-    <a href="methodology.html" data-page="methodology">Methodology</a>
-    <a href="reports.html" data-page="reports">Reports</a>
-    <a href="publications.html" data-page="publications">Publications</a>
-    <a href="investigators.html" data-page="investigators">Investigators</a>
-    <a href="get-involved.html" data-page="get-involved">Get Involved / Access Data</a>
-    <a class="nav-github" href="https://github.com/ppbs-science/ppbs_demo" target="_blank" rel="noopener" title="View this project on GitHub" aria-label="View this project on GitHub"><svg viewBox="0 0 16 16" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a>
+  <div class="mark"><a href="index.html">P<em>PB</em>S</a><button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button></div>
+  <nav aria-label="Primary navigation">
+    <div class="nav-group">
+      <button class="nav-group__trigger" type="button" aria-expanded="false">About <span aria-hidden="true">+</span></button>
+      <div class="nav-group__menu">
+        <a href="motivation.html" data-page="motivation"><strong>What is PPBS?</strong><small>Purpose, history, and rationale</small></a>
+        <a href="faq.html" data-page="faq"><strong>Questions & answers</strong><small>Data, access, projects, and governance</small></a>
+      </div>
+    </div>
+    <div class="nav-group">
+      <button class="nav-group__trigger" type="button" aria-expanded="false">Research <span aria-hidden="true">+</span></button>
+      <div class="nav-group__menu nav-group__menu--wide">
+        <a href="constructs.html" data-page="constructs"><strong>Constructs</strong><small>What PPBS measures</small></a>
+        <a href="methodology.html" data-page="methodology"><strong>Methodology</strong><small>Samples, surveys, and design</small></a>
+        <a href="reports.html" data-page="reports"><strong>Reports</strong><small>Interactive research outputs</small></a>
+        <a href="publications.html" data-page="publications"><strong>Publications</strong><small>Papers, preprints, and media</small></a>
+      </div>
+    </div>
+    <div class="nav-group">
+      <button class="nav-group__trigger" type="button" aria-expanded="false">People & credit <span aria-hidden="true">+</span></button>
+      <div class="nav-group__menu">
+        <a href="investigators.html" data-page="investigators"><strong>People</strong><small>Researchers, partners, and supporters</small></a>
+        <a href="contributions.html" data-page="contributions"><strong>Contributions</strong><small>Public roles and research credit</small></a>
+      </div>
+    </div>
+    <div class="nav-group">
+      <button class="nav-group__trigger" type="button" aria-expanded="false">Take part <span aria-hidden="true">+</span></button>
+      <div class="nav-group__menu nav-group__menu--right">
+        <a href="mentorship.html" data-page="mentorship"><strong>Mentored research</strong><small>Lead a supported PPBS project</small></a>
+        <a href="get-involved.html" data-page="get-involved"><strong>Get involved / access data</strong><small>Collaborate, contribute, or enquire</small></a>
+      </div>
+    </div>
+    <a class="nav-github" href="https://github.com/ppbs-science/ppbs_demo" target="_blank" rel="noopener noreferrer" title="View this project on GitHub" aria-label="View this project on GitHub"><svg viewBox="0 0 16 16" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a>
   </nav>
 </div>
 
@@ -37,58 +60,58 @@
   <div class="content-body">
     <h2>Peer Reviewed</h2>
 <ul>
-<li><p>Marinthe, G., Cislak, A., Stronge, S., Biddlestone, M., Azevedo, F., Kasper, A., Sibley, C. G., &amp; Cichocka, A. (2025). Yes, we can (but for different reasons): Collective narcissism is linked to different values but similar pro-ingroup collective action tendencies among disadvantaged and advantaged ethnic groups. <em>British Journal of Social Psychology, 64</em>(1), e12790. <a href="https://doi.org/10.1111/bjso.12790">DOI: 10.1111/bjso.12790</a></p>
+<li><p>Marinthe, G., Cislak, A., Stronge, S., Biddlestone, M., Azevedo, F., Kasper, A., Sibley, C. G., &amp; Cichocka, A. (2025). Yes, we can (but for different reasons): Collective narcissism is linked to different values but similar pro-ingroup collective action tendencies among disadvantaged and advantaged ethnic groups. <em>British Journal of Social Psychology, 64</em>(1), e12790. <a href="https://doi.org/10.1111/bjso.12790" target="_blank" rel="noopener noreferrer">DOI: 10.1111/bjso.12790</a></p>
 </li>
-<li><p>Cichocka, A., Bocian, K., Winiewski, M., &amp; Azevedo, F. (2022). “Not racist, but...” Beliefs about immigration restrictions, collective narcissism, and justification of ethnic extremism. <em>Political Psychology, 43</em>(6), 1217-1234. <a href="https://doi.org/10.1111/pops.12813">DOI: 10.1111/pops.12813</a></p>
+<li><p>Cichocka, A., Bocian, K., Winiewski, M., &amp; Azevedo, F. (2022). “Not racist, but...” Beliefs about immigration restrictions, collective narcissism, and justification of ethnic extremism. <em>Political Psychology, 43</em>(6), 1217-1234. <a href="https://doi.org/10.1111/pops.12813" target="_blank" rel="noopener noreferrer">DOI: 10.1111/pops.12813</a></p>
 </li>
-<li><p>Marinthe, G., Cichocka, A., Cislak, A., Alexander-Grose, N., &amp; Azevedo, F. (2022). Understanding identity processes in support for reactionary and progressive social movements among advantaged and disadvantaged groups: The role of collective narcissism and secure ingroup identity. <em>European Journal of Social Psychology, 52</em>(7), 1047-1063. <a href="https://doi.org/10.1002/ejsp.2885">DOI: 10.1002/ejsp.2885</a></p>
+<li><p>Marinthe, G., Cichocka, A., Cislak, A., Alexander-Grose, N., &amp; Azevedo, F. (2022). Understanding identity processes in support for reactionary and progressive social movements among advantaged and disadvantaged groups: The role of collective narcissism and secure ingroup identity. <em>European Journal of Social Psychology, 52</em>(7), 1047-1063. <a href="https://doi.org/10.1002/ejsp.2885" target="_blank" rel="noopener noreferrer">DOI: 10.1002/ejsp.2885</a></p>
 </li>
-<li><p>Azevedo, F., &amp; Jost, J. T. (2021). The ideological basis of antiscientific attitudes: Effects of authoritarianism, conservatism, religiosity, social dominance, and system justification. <em>Group Processes &amp; Intergroup Relations, 24</em>(4), 518-549. <a href="https://doi.org/10.1177/1368430221990104">DOI: 10.1177/1368430221990104</a></p>
+<li><p>Azevedo, F., &amp; Jost, J. T. (2021). The ideological basis of antiscientific attitudes: Effects of authoritarianism, conservatism, religiosity, social dominance, and system justification. <em>Group Processes &amp; Intergroup Relations, 24</em>(4), 518-549. <a href="https://doi.org/10.1177/1368430221990104" target="_blank" rel="noopener noreferrer">DOI: 10.1177/1368430221990104</a></p>
 </li>
-<li><p>van der Linden, S., Panagopoulos, C., Azevedo, F., &amp; Jost, J. T. (2021). The Paranoid Style in American Politics Revisited: An Ideological Asymmetry in Conspiratorial Thinking. <em>Political Psychology, 42</em>(1), 23-51. <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/pops.12681">DOI: 10.1111/pops.12681</a>. [<a href="https://www.researchgate.net/publication/342625213_The_Paranoid_Style_in_American_Politics_Revisited_An_Ideological_Asymmetry_in_Conspiratorial_Thinking">ungated</a>]</p>
+<li><p>van der Linden, S., Panagopoulos, C., Azevedo, F., &amp; Jost, J. T. (2021). The Paranoid Style in American Politics Revisited: An Ideological Asymmetry in Conspiratorial Thinking. <em>Political Psychology, 42</em>(1), 23-51. <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/pops.12681" target="_blank" rel="noopener noreferrer">DOI: 10.1111/pops.12681</a>. [<a href="https://www.researchgate.net/publication/342625213_The_Paranoid_Style_in_American_Politics_Revisited_An_Ideological_Asymmetry_in_Conspiratorial_Thinking" target="_blank" rel="noopener noreferrer">ungated</a>]</p>
 </li>
-<li><p>Rothmund, T., Bromme, L., &amp; Azevedo, F. (2020). Justice for the People? How Justice Sensitivity Can Foster and Impair Support for Populist Radical-Right Parties and Politicians in the United States and in Germany. <em>Political Psychology, 41</em>(3), 479-497. <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/pops.12632">DOI: 10.1111/pops.12632</a>. [<a href="https://www.researchgate.net/publication/336606067_Justice_for_the_People_How_Justice_Sensitivity_Can_Foster_and_Impair_Support_for_Populist_Radical-Right_Parties_and_Politicians_in_the_United_States_and_in_Germany">ungated</a>]</p>
+<li><p>Rothmund, T., Bromme, L., &amp; Azevedo, F. (2020). Justice for the People? How Justice Sensitivity Can Foster and Impair Support for Populist Radical-Right Parties and Politicians in the United States and in Germany. <em>Political Psychology, 41</em>(3), 479-497. <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/pops.12632" target="_blank" rel="noopener noreferrer">DOI: 10.1111/pops.12632</a>. [<a href="https://www.researchgate.net/publication/336606067_Justice_for_the_People_How_Justice_Sensitivity_Can_Foster_and_Impair_Support_for_Populist_Radical-Right_Parties_and_Politicians_in_the_United_States_and_in_Germany" target="_blank" rel="noopener noreferrer">ungated</a>]</p>
 </li>
-<li><p>Azevedo, F., Jost, J. T., Rothmund, T., &amp; Sterling, J. (2019). Neoliberal ideology and the justification of inequality in capitalist societies: Why social and economic dimensions of ideology are intertwined. <em>Journal of Social Issues, 75</em>(1), 49-88. <a href="https://spssi.onlinelibrary.wiley.com/doi/abs/10.1111/josi.12310">DOI: 10.1111/josi.12310</a>. [<a href="https://www.researchgate.net/publication/331289012_Neoliberal_Ideology_and_the_Justification_of_Inequality_in_Capitalist_Societies_Why_Social_and_Economic_Dimensions_of_Ideology_Are_Intertwined">ungated</a>]</p>
+<li><p>Azevedo, F., Jost, J. T., Rothmund, T., &amp; Sterling, J. (2019). Neoliberal ideology and the justification of inequality in capitalist societies: Why social and economic dimensions of ideology are intertwined. <em>Journal of Social Issues, 75</em>(1), 49-88. <a href="https://spssi.onlinelibrary.wiley.com/doi/abs/10.1111/josi.12310" target="_blank" rel="noopener noreferrer">DOI: 10.1111/josi.12310</a>. [<a href="https://www.researchgate.net/publication/331289012_Neoliberal_Ideology_and_the_Justification_of_Inequality_in_Capitalist_Societies_Why_Social_and_Economic_Dimensions_of_Ideology_Are_Intertwined" target="_blank" rel="noopener noreferrer">ungated</a>]</p>
 </li>
-<li><p>Womick, J., Rothmund, T., Azevedo, F., King, L. A., &amp; Jost, J. T. (2019). Group-Based Dominance and Authoritarian Aggression Predict Support for Donald Trump in the 2016 U.S. Presidential Election. <em>Social Psychological and Personality Science, 10</em>(5), 643-652. <a href="https://journals.sagepub.com/doi/10.1177/1948550618778290">DOI: 10.1177/1948550618778290</a>. [<a href="https://www.researchgate.net/publication/325891942_Group-Based_Dominance_and_Authoritarian_Aggression_Predict_Support_for_Donald_Trump_in_the_2016_US_Presidential_Election">ungated</a>]</p>
+<li><p>Womick, J., Rothmund, T., Azevedo, F., King, L. A., &amp; Jost, J. T. (2019). Group-Based Dominance and Authoritarian Aggression Predict Support for Donald Trump in the 2016 U.S. Presidential Election. <em>Social Psychological and Personality Science, 10</em>(5), 643-652. <a href="https://journals.sagepub.com/doi/10.1177/1948550618778290" target="_blank" rel="noopener noreferrer">DOI: 10.1177/1948550618778290</a>. [<a href="https://www.researchgate.net/publication/325891942_Group-Based_Dominance_and_Authoritarian_Aggression_Predict_Support_for_Donald_Trump_in_the_2016_US_Presidential_Election" target="_blank" rel="noopener noreferrer">ungated</a>]</p>
 </li>
-<li><p>Hoffarth, M. R., Azevedo, F., &amp; Jost, J. T. (2019). Political conservatism and the exploitation of nonhuman animals: An application of system justification theory. <em>Group Processes &amp; Intergroup Relations, 22</em>(6), 858-878. <a href="https://journals.sagepub.com/doi/10.1177/1368430219843183">DOI: 10.1177/1368430219843183</a>. [<a href="https://www.researchgate.net/publication/335625068_Political_conservatism_and_the_exploitation_of_nonhuman_animals_An_application_of_system_justification_theory">ungated</a>]</p>
+<li><p>Hoffarth, M. R., Azevedo, F., &amp; Jost, J. T. (2019). Political conservatism and the exploitation of nonhuman animals: An application of system justification theory. <em>Group Processes &amp; Intergroup Relations, 22</em>(6), 858-878. <a href="https://journals.sagepub.com/doi/10.1177/1368430219843183" target="_blank" rel="noopener noreferrer">DOI: 10.1177/1368430219843183</a>. [<a href="https://www.researchgate.net/publication/335625068_Political_conservatism_and_the_exploitation_of_nonhuman_animals_An_application_of_system_justification_theory" target="_blank" rel="noopener noreferrer">ungated</a>]</p>
 </li>
-<li><p>Azevedo, F., Jost, J. T., &amp; Rothmund, T. (2017). &quot;Making America great again&quot;: System justification in the US presidential election of 2016. <em>Translational Issues in Psychological Science, 3</em>(3), 231-240. <a href="https://doi.apa.org/doiLanding?doi=10.1037/tps0000122">DOI: 10.1037/tps0000122</a>. [<a href="https://www.researchgate.net/publication/319969170_Making_America_great_again_System_justification_in_the_US_presidential_election_of_2016">ungated</a>]</p>
+<li><p>Azevedo, F., Jost, J. T., &amp; Rothmund, T. (2017). &quot;Making America great again&quot;: System justification in the US presidential election of 2016. <em>Translational Issues in Psychological Science, 3</em>(3), 231-240. <a href="https://doi.apa.org/doiLanding?doi=10.1037/tps0000122" target="_blank" rel="noopener noreferrer">DOI: 10.1037/tps0000122</a>. [<a href="https://www.researchgate.net/publication/319969170_Making_America_great_again_System_justification_in_the_US_presidential_election_of_2016" target="_blank" rel="noopener noreferrer">ungated</a>]</p>
 </li>
-<li><p>Jost, J. T., Langer, M., Badaan, V., Azevedo, F., Etchezahar, E., Ungaretti, J., &amp; Hennes, E. P. (2017). Ideology and the limits of self-interest: System justification motivation and conservative advantages in mass politics. <em>Translational Issues in Psychological Science, 3</em>(3), e1-e26. <a href="https://psycnet.apa.org/fulltext/2017-48712-001.html">DOI: 10.1037/tps0000127</a>. [<a href="https://www.researchgate.net/publication/320721808_Ideology_and_the_Limits_of_Self-Interest_System_Justification_Motivation_and_Conservative_Advantages_in_Mass_Politics">ungated</a>]</p>
+<li><p>Jost, J. T., Langer, M., Badaan, V., Azevedo, F., Etchezahar, E., Ungaretti, J., &amp; Hennes, E. P. (2017). Ideology and the limits of self-interest: System justification motivation and conservative advantages in mass politics. <em>Translational Issues in Psychological Science, 3</em>(3), e1-e26. <a href="https://psycnet.apa.org/fulltext/2017-48712-001.html" target="_blank" rel="noopener noreferrer">DOI: 10.1037/tps0000127</a>. [<a href="https://www.researchgate.net/publication/320721808_Ideology_and_the_Limits_of_Self-Interest_System_Justification_Motivation_and_Conservative_Advantages_in_Mass_Politics" target="_blank" rel="noopener noreferrer">ungated</a>]</p>
 </li>
 </ul>
 <h2>Preprints</h2>
 <ul>
-<li><p>Capraro, V., Panizza, F., Vitriol, J. A., Biddlestone, M., Krouwel, A., Kutiyski, Y., López Ortega, A., Kaneko Ebert, A. C., Wan, M. F., Hagemann, J. M. L., Hetche, S., Kaiser, A., Kujal, P., Douglas, K. M., Federico, C. M., Jetten, J., van der Linden, S., &amp; Azevedo, F. (2026, February 20). Authoritarianism and conspiracism around the world [PsyArXiv preprint, version 2]. <a href="https://doi.org/10.31234/osf.io/ke49h_v2">DOI: 10.31234/osf.io/ke49h_v2</a>. [<a href="https://osf.io/65rkj/overview">data and materials</a>]</p>
+<li><p>Capraro, V., Panizza, F., Vitriol, J. A., Biddlestone, M., Krouwel, A., Kutiyski, Y., López Ortega, A., Kaneko Ebert, A. C., Wan, M. F., Hagemann, J. M. L., Hetche, S., Kaiser, A., Kujal, P., Douglas, K. M., Federico, C. M., Jetten, J., van der Linden, S., &amp; Azevedo, F. (2026, February 20). Authoritarianism and conspiracism around the world [PsyArXiv preprint, version 2]. <a href="https://doi.org/10.31234/osf.io/ke49h_v2" target="_blank" rel="noopener noreferrer">DOI: 10.31234/osf.io/ke49h_v2</a>. [<a href="https://osf.io/65rkj/overview" target="_blank" rel="noopener noreferrer">data and materials</a>]</p>
 </li>
-<li><p>Biddlestone, M., Azevedo, F., Chalmers, J., Gronfeldt, B., &amp; Zibell, H. (2025, November 8). Mapping and mitigating misogynist incel beliefs: Psychological foundations and intervention strategies [Research Square preprint]. <a href="https://doi.org/10.21203/rs.3.rs-7010338/v1">DOI: 10.21203/rs.3.rs-7010338/v1</a></p>
+<li><p>Biddlestone, M., Azevedo, F., Chalmers, J., Gronfeldt, B., &amp; Zibell, H. (2025, November 8). Mapping and mitigating misogynist incel beliefs: Psychological foundations and intervention strategies [Research Square preprint]. <a href="https://doi.org/10.21203/rs.3.rs-7010338/v1" target="_blank" rel="noopener noreferrer">DOI: 10.21203/rs.3.rs-7010338/v1</a></p>
 </li>
 </ul>
 <h2>Media &amp; Video</h2>
 <ul>
-<li><p>Ellwood, B. (2020, November 5). Conservatives&#39; propensity toward conspiracy thinking can be explained by a distrust in officials and paranoid thinking. [<a href="https://www.psypost.org/2020/11/conservatives-propensity-toward-conspiracy-thinking-can-be-explained-by-a-distrust-in-officials-and-paranoid-thinking-58459">PsyPost</a>]</p>
+<li><p>Ellwood, B. (2020, November 5). Conservatives&#39; propensity toward conspiracy thinking can be explained by a distrust in officials and paranoid thinking. [<a href="https://www.psypost.org/2020/11/conservatives-propensity-toward-conspiracy-thinking-can-be-explained-by-a-distrust-in-officials-and-paranoid-thinking-58459" target="_blank" rel="noopener noreferrer">PsyPost</a>]</p>
 </li>
-<li><p>Jangles Science Lad (2020, October 28). System Justification or: How I Learned to Stop Worrying and Love the Boot. [<a href="https://www.youtube.com/watch?v=0vzUdJfMd84">YouTube</a>]</p>
+<li><p>Jangles Science Lad (2020, October 28). System Justification or: How I Learned to Stop Worrying and Love the Boot. [<a href="https://www.youtube.com/watch?v=0vzUdJfMd84" target="_blank" rel="noopener noreferrer">YouTube</a>]</p>
 </li>
-<li><p>Healy, M. (2020, October 16). Why do conspiracy theories about pedophilia hold such sway with some conservatives? <em>The Los Angeles Times</em>. [<a href="https://www.latimes.com/science/story/2020-10-16/why-do-conspiracy-theories-about-pedophilia-hold-such-sway-with-some-conservatives">link</a>]</p>
+<li><p>Healy, M. (2020, October 16). Why do conspiracy theories about pedophilia hold such sway with some conservatives? <em>The Los Angeles Times</em>. [<a href="https://www.latimes.com/science/story/2020-10-16/why-do-conspiracy-theories-about-pedophilia-hold-such-sway-with-some-conservatives" target="_blank" rel="noopener noreferrer">link</a>]</p>
 </li>
-<li><p>Rogers, O. (2020, February 10). Conservatism, Systems, And Animal Ethics. [<a href="https://faunalytics.org/conservatism-systems-and-animal-ethics/">Faunalytics</a>]</p>
+<li><p>Rogers, O. (2020, February 10). Conservatism, Systems, And Animal Ethics. [<a href="https://faunalytics.org/conservatism-systems-and-animal-ethics/" target="_blank" rel="noopener noreferrer">Faunalytics</a>]</p>
 </li>
-<li><p>Dolan, E. W. (2018, July 21). Authoritarian aggression and group-based dominance distinguished Trump supporters from other Republicans in 2016. [<a href="https://www.psypost.org/2018/07/authoritarian-aggression-and-group-based-dominance-distinguished-trump-supporters-from-other-republicans-in-2016-51821">PsyPost</a>]</p>
+<li><p>Dolan, E. W. (2018, July 21). Authoritarian aggression and group-based dominance distinguished Trump supporters from other Republicans in 2016. [<a href="https://www.psypost.org/2018/07/authoritarian-aggression-and-group-based-dominance-distinguished-trump-supporters-from-other-republicans-in-2016-51821" target="_blank" rel="noopener noreferrer">PsyPost</a>]</p>
 </li>
 </ul>
 <h2>Other</h2>
 <ul>
-<li><p>Jost, J. T. (2020). A theory of system justification. Harvard University Press. <a href="https://doi.org/10.2307/j.ctv13qfw6w">link</a></p>
+<li><p>Jost, J. T. (2020). A theory of system justification. Harvard University Press. <a href="https://doi.org/10.2307/j.ctv13qfw6w" target="_blank" rel="noopener noreferrer">link</a></p>
 </li>
-<li><p>Jost, J. T. (2019). A quarter century of system justification theory: Questions, answers, criticisms, and societal applications. <em>British Journal of Social Psychology, 58</em>(2), 263-314. <a href="https://bpspsychub.onlinelibrary.wiley.com/doi/abs/10.1111/bjso.12297">DOI: 10.1111/bjso.12297</a></p>
+<li><p>Jost, J. T. (2019). A quarter century of system justification theory: Questions, answers, criticisms, and societal applications. <em>British Journal of Social Psychology, 58</em>(2), 263-314. <a href="https://bpspsychub.onlinelibrary.wiley.com/doi/abs/10.1111/bjso.12297" target="_blank" rel="noopener noreferrer">DOI: 10.1111/bjso.12297</a></p>
 </li>
-<li><p>Jost, J. T. (2017, June). A theory of system justification. [<a href="https://www.apa.org/science/about/psa/2017/06/system-justification">link</a>]</p>
+<li><p>Jost, J. T. (2017, June). A theory of system justification. [<a href="https://www.apa.org/science/about/psa/2017/06/system-justification" target="_blank" rel="noopener noreferrer">link</a>]</p>
 </li>
-<li><p>Jost, J. T. (2017). Working class conservatism: a system justification perspective. <em>Current Opinion in Psychology, 18</em>, 73-78. <a href="https://www.sciencedirect.com/science/article/pii/S2352250X1730221X">DOI: 10.1016/j.copsyc.2017.08.020</a></p>
+<li><p>Jost, J. T. (2017). Working class conservatism: a system justification perspective. <em>Current Opinion in Psychology, 18</em>, 73-78. <a href="https://www.sciencedirect.com/science/article/pii/S2352250X1730221X" target="_blank" rel="noopener noreferrer">DOI: 10.1016/j.copsyc.2017.08.020</a></p>
 </li>
 </ul>
 
@@ -102,8 +125,8 @@
     <span class="f-profile">
       <span>PI: Flavio Azevedo</span>
       <span class="f-profile-links">
-        <a href="https://www.linkedin.com/in/flavio-azevedo-571a371aa" target="_blank" rel="noopener" aria-label="Flavio Azevedo on LinkedIn">LinkedIn</a>
-        <a href="https://flavioazevedo.com/" target="_blank" rel="noopener" aria-label="Flavio Azevedo's website">Website</a>
+        <a href="https://www.linkedin.com/in/flavio-azevedo-571a371aa" target="_blank" rel="noopener noreferrer" aria-label="Flavio Azevedo on LinkedIn">LinkedIn</a>
+        <a href="https://flavioazevedo.com/" target="_blank" rel="noopener noreferrer" aria-label="Flavio Azevedo's website">Website</a>
       </span>
     </span>
   </div>

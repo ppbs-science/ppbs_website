@@ -47,6 +47,8 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="assets/styles.css">
 
 
+
+
 <link rel="icon" type="image/png" href="../../img/favicon.png"><link rel="stylesheet" href="../../css/l6.css">
 <style>
   .l6-shell-topbar { margin-bottom: 0; }
@@ -58,19 +60,44 @@ ul.task-list li input[type="checkbox"] {
 
 <body class="quarto-light">
 <div class="l6-shell-topbar"><div class="topbar">
-  <div class="mark"><a href="../../index.html">P<em>PB</em>S</a><button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button></div>
-  <nav>
-    <a href="../../motivation.html" data-page="motivation">Motivation</a>
-    <a href="../../constructs.html" data-page="constructs">Constructs</a>
-    <a href="../../methodology.html" data-page="methodology">Methodology</a>
-    <a href="../../reports.html" data-page="reports" class="active">Reports</a>
-    <a href="../../publications.html" data-page="publications">Publications</a>
-    <a href="../../investigators.html" data-page="investigators">Investigators</a>
-    <a href="../../get-involved.html" data-page="get-involved">Get Involved / Access Data</a>
-    <a class="nav-github" href="https://github.com/ppbs-science/ppbs_demo" target="_blank" rel="noopener" title="View this project on GitHub" aria-label="View this project on GitHub"><svg viewBox="0 0 16 16" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a>
+  <div class="mark"><a href="../../index.html">P<em>PB</em>S</a><button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button></div>
+  <nav aria-label="Primary navigation">
+    <div class="nav-group">
+      <button class="nav-group__trigger" type="button" aria-expanded="false">About <span aria-hidden="true">+</span></button>
+      <div class="nav-group__menu">
+        <a href="../../motivation.html" data-page="motivation"><strong>What is PPBS?</strong><small>Purpose, history, and rationale</small></a>
+        <a href="../../faq.html" data-page="faq"><strong>Questions & answers</strong><small>Data, access, projects, and governance</small></a>
+      </div>
+    </div>
+    <div class="nav-group">
+      <button class="nav-group__trigger" type="button" aria-expanded="false">Research <span aria-hidden="true">+</span></button>
+      <div class="nav-group__menu nav-group__menu--wide">
+        <a href="../../constructs.html" data-page="constructs"><strong>Constructs</strong><small>What PPBS measures</small></a>
+        <a href="../../methodology.html" data-page="methodology"><strong>Methodology</strong><small>Samples, surveys, and design</small></a>
+        <a href="../../reports.html" data-page="reports" class="active"><strong>Reports</strong><small>Interactive research outputs</small></a>
+        <a href="../../publications.html" data-page="publications"><strong>Publications</strong><small>Papers, preprints, and media</small></a>
+      </div>
+    </div>
+    <div class="nav-group">
+      <button class="nav-group__trigger" type="button" aria-expanded="false">People & credit <span aria-hidden="true">+</span></button>
+      <div class="nav-group__menu">
+        <a href="../../investigators.html" data-page="investigators"><strong>People</strong><small>Researchers, partners, and supporters</small></a>
+        <a href="../../contributions.html" data-page="contributions"><strong>Contributions</strong><small>Public roles and research credit</small></a>
+      </div>
+    </div>
+    <div class="nav-group">
+      <button class="nav-group__trigger" type="button" aria-expanded="false">Take part <span aria-hidden="true">+</span></button>
+      <div class="nav-group__menu nav-group__menu--right">
+        <a href="../../mentorship.html" data-page="mentorship"><strong>Mentored research</strong><small>Lead a supported PPBS project</small></a>
+        <a href="../../get-involved.html" data-page="get-involved"><strong>Get involved / access data</strong><small>Collaborate, contribute, or enquire</small></a>
+      </div>
+    </div>
+    <a class="nav-github" href="https://github.com/ppbs-science/ppbs_demo" target="_blank" rel="noopener noreferrer" title="View this project on GitHub" aria-label="View this project on GitHub"><svg viewBox="0 0 16 16" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a>
   </nav>
 </div>
 </div>
+
+
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -180,7 +207,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="sample" class="level3" data-number="1.2">
 <h3 data-number="1.2" class="anchored" data-anchor-id="sample"><span class="header-section-number">1.2</span> Sample</h3>
 <p><em>N</em>=1500</p>
-<p>To conduct a exploratory and a confirmatory large surveys during the general election, we hired a professional survey firm (SSI, a US-based market research company that recruits participants from a panel of 7,139,027 American citizens; more information can be found at <a href="www.surveysampling.com">www.surveysampling.com</a> (now <a href="https://www.dynata.com/" class="uri">https://www.dynata.com/</a>) to recruit a nationally representative sample of 1,500 Americans (50.7% women) who completed study materials during the general election from August 16-September 9, 2016. (Information about sampling and exclusion criteria is included in the <em>Supplement</em>). The age distribution was as follows: 18-24 (12.9%), 25-34 (17.6%), 35-44 (17.5%), 45-54 (19.5%), 55-65 (15.6%) and older than 65 (16.9%). The ethnic breakdown was: White/European American (82.5%), Black/African American (7.7%), Latino (5.9%) and “Other” (4.0%). Concerning religion, 67.6% identified as Christian, 17.1% as religiously affiliated but not Christian, and 15.3% as Atheist/Agnostic. With respect to education 35.1% indicated “high school only or lower,” 31.4 % indicated “some college,” and 33.6% indicated having received a “Bachelor” or “Graduate” degree. 2424 participants were directed to the survey, 1885 of which finished the survey (attrition rate 22%).</p>
+<p>To conduct a exploratory and a confirmatory large surveys during the general election, we hired a professional survey firm (SSI, a US-based market research company that recruits participants from a panel of 7,139,027 American citizens; more information can be found at <a href="www.surveysampling.com">www.surveysampling.com</a> (now <a href="https://www.dynata.com/" class="uri" target="_blank" rel="noopener noreferrer">https://www.dynata.com/</a>) to recruit a nationally representative sample of 1,500 Americans (50.7% women) who completed study materials during the general election from August 16-September 9, 2016. (Information about sampling and exclusion criteria is included in the <em>Supplement</em>). The age distribution was as follows: 18-24 (12.9%), 25-34 (17.6%), 35-44 (17.5%), 45-54 (19.5%), 55-65 (15.6%) and older than 65 (16.9%). The ethnic breakdown was: White/European American (82.5%), Black/African American (7.7%), Latino (5.9%) and “Other” (4.0%). Concerning religion, 67.6% identified as Christian, 17.1% as religiously affiliated but not Christian, and 15.3% as Atheist/Agnostic. With respect to education 35.1% indicated “high school only or lower,” 31.4 % indicated “some college,” and 33.6% indicated having received a “Bachelor” or “Graduate” degree. 2424 participants were directed to the survey, 1885 of which finished the survey (attrition rate 22%).</p>
 <p>We followed recommendations to minimize the problem of careless responding in online studies. Specifically, we employed 10 random attention questions and time controls to check for data quality. There were 385 participants who failed more than one attention check or finished the survey in under ~22 minutes and were therefore excluded from the sample. For the 1500 participants who successfully finished the survey, completion time was 67 minutes on average (MD: 51min).</p>
 </section>
 </section>
@@ -5333,6 +5360,8 @@ Table&nbsp;39: Elastic Net Summary
           </script>
 
 
+
+
 <div class="l6-shell-footer"><footer>
   <div class="f-mark">P<em>PB</em>S</div>
   <div class="f-body">
@@ -5340,8 +5369,8 @@ Table&nbsp;39: Elastic Net Summary
     <span class="f-profile">
       <span>PI: Flavio Azevedo</span>
       <span class="f-profile-links">
-        <a href="https://www.linkedin.com/in/flavio-azevedo-571a371aa" target="_blank" rel="noopener" aria-label="Flavio Azevedo on LinkedIn">LinkedIn</a>
-        <a href="https://flavioazevedo.com/" target="_blank" rel="noopener" aria-label="Flavio Azevedo's website">Website</a>
+        <a href="https://www.linkedin.com/in/flavio-azevedo-571a371aa" target="_blank" rel="noopener noreferrer" aria-label="Flavio Azevedo on LinkedIn">LinkedIn</a>
+        <a href="https://flavioazevedo.com/" target="_blank" rel="noopener noreferrer" aria-label="Flavio Azevedo's website">Website</a>
       </span>
     </span>
   </div>

@@ -5871,6 +5871,8 @@ padding-top: 0.5em;
 </style>
 
 
+
+
 <link rel="icon" type="image/png" href="../img/favicon.png"><link rel="stylesheet" href="../css/l6.css">
 <style>
   .l6-shell-topbar { margin-bottom: 0; }
@@ -5882,19 +5884,44 @@ padding-top: 0.5em;
 
 <body class="quarto-light">
 <div class="l6-shell-topbar"><div class="topbar">
-  <div class="mark"><a href="../index.html">P<em>PB</em>S</a><button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button></div>
-  <nav>
-    <a href="../motivation.html" data-page="motivation">Motivation</a>
-    <a href="../constructs.html" data-page="constructs">Constructs</a>
-    <a href="../methodology.html" data-page="methodology" class="active">Methodology</a>
-    <a href="../reports.html" data-page="reports">Reports</a>
-    <a href="../publications.html" data-page="publications">Publications</a>
-    <a href="../investigators.html" data-page="investigators">Investigators</a>
-    <a href="../get-involved.html" data-page="get-involved">Get Involved / Access Data</a>
-    <a class="nav-github" href="https://github.com/ppbs-science/ppbs_demo" target="_blank" rel="noopener" title="View this project on GitHub" aria-label="View this project on GitHub"><svg viewBox="0 0 16 16" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a>
+  <div class="mark"><a href="../index.html">P<em>PB</em>S</a><button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button></div>
+  <nav aria-label="Primary navigation">
+    <div class="nav-group">
+      <button class="nav-group__trigger" type="button" aria-expanded="false">About <span aria-hidden="true">+</span></button>
+      <div class="nav-group__menu">
+        <a href="../motivation.html" data-page="motivation"><strong>What is PPBS?</strong><small>Purpose, history, and rationale</small></a>
+        <a href="../faq.html" data-page="faq"><strong>Questions & answers</strong><small>Data, access, projects, and governance</small></a>
+      </div>
+    </div>
+    <div class="nav-group">
+      <button class="nav-group__trigger" type="button" aria-expanded="false">Research <span aria-hidden="true">+</span></button>
+      <div class="nav-group__menu nav-group__menu--wide">
+        <a href="../constructs.html" data-page="constructs"><strong>Constructs</strong><small>What PPBS measures</small></a>
+        <a href="../methodology.html" data-page="methodology" class="active"><strong>Methodology</strong><small>Samples, surveys, and design</small></a>
+        <a href="../reports.html" data-page="reports"><strong>Reports</strong><small>Interactive research outputs</small></a>
+        <a href="../publications.html" data-page="publications"><strong>Publications</strong><small>Papers, preprints, and media</small></a>
+      </div>
+    </div>
+    <div class="nav-group">
+      <button class="nav-group__trigger" type="button" aria-expanded="false">People & credit <span aria-hidden="true">+</span></button>
+      <div class="nav-group__menu">
+        <a href="../investigators.html" data-page="investigators"><strong>People</strong><small>Researchers, partners, and supporters</small></a>
+        <a href="../contributions.html" data-page="contributions"><strong>Contributions</strong><small>Public roles and research credit</small></a>
+      </div>
+    </div>
+    <div class="nav-group">
+      <button class="nav-group__trigger" type="button" aria-expanded="false">Take part <span aria-hidden="true">+</span></button>
+      <div class="nav-group__menu nav-group__menu--right">
+        <a href="../mentorship.html" data-page="mentorship"><strong>Mentored research</strong><small>Lead a supported PPBS project</small></a>
+        <a href="../get-involved.html" data-page="get-involved"><strong>Get involved / access data</strong><small>Collaborate, contribute, or enquire</small></a>
+      </div>
+    </div>
+    <a class="nav-github" href="https://github.com/ppbs-science/ppbs_demo" target="_blank" rel="noopener noreferrer" title="View this project on GitHub" aria-label="View this project on GitHub"><svg viewBox="0 0 16 16" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a>
   </nav>
 </div>
 </div>
+
+
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
 <div id="quarto-sidebar-toc-left" class="sidebar toc-left">
@@ -6049,7 +6076,7 @@ max-width: 60px !important;
 <span style="color:red">
 </span>
 ----->
-<p>In 2019, we re-hired Cint (<a href="https://www.cint.com/" target="_blank">www.cint.com</a>), a survey research firm that recruits participants from a pool of over 13 million U.S. citizens, to recruit a recontacts sample of 609 Americans (68.64% women) from its panel who months prior had successfully completed the 2018 Psychology Political Behavior Studies (PPBS; from November 2nd to November 6th, 2018). The follow-up recontacts study took place in the first months of 2019 (from February 12 to March 10, 2019). The time difference between the two surveys ranged from 97 to 127 days (<em>M</em> = 102.81, <em>SD</em> = 4.83), or between a little over 3 months to a little over 4 months. All subjects in this sample participated successfully in both iterations of the PPBS (2018 Pre-Election and Pre-Election Recontacts).</p>
+<p>In 2019, we re-hired Cint (<a href="https://www.cint.com/" target="_blank" rel="noopener noreferrer">www.cint.com</a>), a survey research firm that recruits participants from a pool of over 13 million U.S. citizens, to recruit a recontacts sample of 609 Americans (68.64% women) from its panel who months prior had successfully completed the 2018 Psychology Political Behavior Studies (PPBS; from November 2nd to November 6th, 2018). The follow-up recontacts study took place in the first months of 2019 (from February 12 to March 10, 2019). The time difference between the two surveys ranged from 97 to 127 days (<em>M</em> = 102.81, <em>SD</em> = 4.83), or between a little over 3 months to a little over 4 months. All subjects in this sample participated successfully in both iterations of the PPBS (2018 Pre-Election and Pre-Election Recontacts).</p>
 <p><br></p>
 <center>
 </center></section>
@@ -6069,7 +6096,7 @@ max-width: 60px !important;
 <h2 class="anchored" data-anchor-id="standalone-sample-n622">Standalone Sample (N=622)</h2>
 <section id="sample-description-1" class="level3">
 <h3 class="anchored" data-anchor-id="sample-description-1">Sample Description</h3>
-<p>In 2019, we re-hired Cint (<a href="https://www.cint.com/" target="_blank">www.cint.com</a>), a survey research firm that recruits participants from a pool of over 13 million U.S. citizens, to recruit a recontacts sample of 622 Americans (69.13% women) from its panel who months prior had successfully completed the 2018 Psychology Political Behavior Studies (PPBS; from February 12 to March 10, 2019). The follow-up recontacts study took place in the months after the 2018 US Midterms Election (from February 12 to March 10, 2019). The time difference between the two surveys ranged from 97 to 127 days (<em>M</em> = 102.81, <em>SD</em> = 4.83), or between a little over 3 months to a little over 4 months. All subjects in this sample participated successfully in both iterations of the The Psychology Political Behavior Studies (PPBS).</p>
+<p>In 2019, we re-hired Cint (<a href="https://www.cint.com/" target="_blank" rel="noopener noreferrer">www.cint.com</a>), a survey research firm that recruits participants from a pool of over 13 million U.S. citizens, to recruit a recontacts sample of 622 Americans (69.13% women) from its panel who months prior had successfully completed the 2018 Psychology Political Behavior Studies (PPBS; from February 12 to March 10, 2019). The follow-up recontacts study took place in the months after the 2018 US Midterms Election (from February 12 to March 10, 2019). The time difference between the two surveys ranged from 97 to 127 days (<em>M</em> = 102.81, <em>SD</em> = 4.83), or between a little over 3 months to a little over 4 months. All subjects in this sample participated successfully in both iterations of the The Psychology Political Behavior Studies (PPBS).</p>
 <p>In addition to administering a much greater number and variety of political and psychological instruments (including full scales) than in other nationally representative surveys (such as ANES, GSS, and WVS), we took a number of steps to insure that the quality of the data would be especially high. These included following professional recommendations to minimize problems of careless responding and satisficing behavior in online survey studies (Meade &amp; Craig, 2012). Specifically, we employed 7 random attention questions, 5 page-time controls, and a Captcha Verification (or <em>Completely Automated Public Turing Test to tell Computers and Humans Apart</em>) question at the beginning of the survey.</p>
 <p>We sent Cint a total of 3728 IDs from the 2018 Pre-Election studies, of which 622 participants were directed to the survey (16.68%), and 622 of them finished the survey (attrition rate 0%). There were 0 (0%) participants who failed more than two attention checks or time-checks or finished the survey in under ~22 minutes and were therefore excluded. For the final sample of 622 participants who successfully completed all study materials had a completion time of 104.13 minutes on average (<em>MD</em>: 96.25min).</p>
 <p>The sample distributions below mirror perfectly that of the recontacts samples because the Recontacts survey instrument did not ask the same demographic questions again. So the below demographic distributions refer to only 609 out of 622 participants.</p>
@@ -6496,6 +6523,8 @@ max-width: 60px !important;
 </div> <!-- /content -->
 
 
+
+
 <div class="l6-shell-footer"><footer>
   <div class="f-mark">P<em>PB</em>S</div>
   <div class="f-body">
@@ -6503,8 +6532,8 @@ max-width: 60px !important;
     <span class="f-profile">
       <span>PI: Flavio Azevedo</span>
       <span class="f-profile-links">
-        <a href="https://www.linkedin.com/in/flavio-azevedo-571a371aa" target="_blank" rel="noopener" aria-label="Flavio Azevedo on LinkedIn">LinkedIn</a>
-        <a href="https://flavioazevedo.com/" target="_blank" rel="noopener" aria-label="Flavio Azevedo's website">Website</a>
+        <a href="https://www.linkedin.com/in/flavio-azevedo-571a371aa" target="_blank" rel="noopener noreferrer" aria-label="Flavio Azevedo on LinkedIn">LinkedIn</a>
+        <a href="https://flavioazevedo.com/" target="_blank" rel="noopener noreferrer" aria-label="Flavio Azevedo's website">Website</a>
       </span>
     </span>
   </div>
