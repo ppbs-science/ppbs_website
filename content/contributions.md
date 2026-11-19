@@ -6,4 +6,4 @@ Country-team work is broader than literal translation. It can include conceptual
 
 This page is generated from project-level Tenzing records. Email addresses, private funding amounts, conflicts of interest, and other governance information remain outside the public website.
 
-Worked on PPBS but do not see your contribution, or is a record incomplete? Use the [PPBS contribution record correction or addition form](https://docs.google.com/forms/d/e/1FAIpQLSfQJUxmX5mlhyAs4b1qVBT7TDVL0tHj5PJpfZCtLYXd5msH_A/viewform). PPBS reviews submissions with the relevant project team before changing the public register.
+**Is a contribution missing, incomplete, or inaccurate?** Use the [PPBS contribution record correction or addition form](https://docs.google.com/forms/d/e/1FAIpQLSfQJUxmX5mlhyAs4b1qVBT7TDVL0tHj5PJpfZCtLYXd5msH_A/viewform). Every submission sends an email notification to the PPBS PI. PPBS will review the information with the relevant project team and correct the public register where appropriate.
