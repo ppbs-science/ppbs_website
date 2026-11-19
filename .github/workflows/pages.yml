@@ -1,7 +1,9 @@
-name: Deploy to GitHub Pages
+name: Deploy to GitHub Pages (manual fallback)
+
+# PPBS production is served by Netlify at https://ppbs.science.
+# Keep this workflow available for recovery, but do not publish on every push.
 on:
-  push:
-    branches: [main]
+  workflow_dispatch:
 permissions:
   contents: read
   pages: write
