@@ -420,6 +420,18 @@
     ]
   },
   {
+    "name": "Jussi Valtonen",
+    "group": "Funders",
+    "affiliation": "University of the Arts Helsinki",
+    "position": "Professor, Master's Programme in Writing",
+    "photo": "img/team/jussi-valtonen.jpg",
+    "bio": "Professor of writing and neuropsychologist whose work connects mental health, health humanities, narrative medicine, and the relationship between scientific evidence and clinical care.",
+    "profile": { "url": "https://www.uniarts.fi/henkilot/jussi-valtonen/", "icon": "website", "label": "University of the Arts Helsinki profile" },
+    "links": [
+      { "url": "https://orcid.org/0000-0002-5241-370X", "icon": "orcid" }
+    ]
+  },
+  {
     "name": "Quinnehtukqut McLamore",
     "group": "Researchers",
     "affiliation": "University of Missouri",

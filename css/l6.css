@@ -2107,6 +2107,40 @@ main.content#quarto-document-content h3 {
   .quality-lenses article { min-height: auto; }
 }
 
+/* Publication provenance */
+.publication-key {
+  margin: 0 0 34px;
+  padding: 20px 22px;
+  border-left: 5px solid var(--accent);
+  background: rgba(37, 122, 84, .08);
+}
+.publication-key p { margin: 0; }
+.publication-badge {
+  display: inline-block;
+  margin: 0 .25rem .15rem 0;
+  padding: .18rem .48rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-size: .68rem;
+  font-weight: 850;
+  letter-spacing: .045em;
+  line-height: 1.25;
+  text-transform: uppercase;
+  vertical-align: baseline;
+}
+.publication-badge--led { color: #0f6544; background: #e4f2e9; }
+.publication-badge--partly { color: #735213; background: #fbf1d5; }
+.publication-provenance,
+.publication-connection {
+  margin: .6rem 0 1.5rem;
+  padding: .72rem .88rem;
+  border-left: 3px solid #b8c7be;
+  background: rgba(255,255,255,.46);
+  font-size: .9rem;
+  line-height: 1.55;
+}
+.publication-connection { border-left-color: #8aa6b2; }
+
 /* ============================================================
    Navigation architecture: four task-based families
    ============================================================ */
