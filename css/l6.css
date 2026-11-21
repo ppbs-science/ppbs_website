@@ -2427,6 +2427,20 @@ main.content#quarto-document-content h3 {
 .dataset-atlas h4 { margin: 0 0 12px; color: #f0b353; font-size: .9rem; }
 .dataset-atlas article p { margin: 0; font-family: 'Domine', Georgia, serif; font-size: .84rem; line-height: 1.75; }
 .dataset-atlas a { color: #fff; }
+.dataset-access {
+  display: inline-block;
+  margin-left: .25rem;
+  padding: .12rem .42rem;
+  border-radius: 999px;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: .62rem;
+  font-weight: 850;
+  letter-spacing: .045em;
+  line-height: 1.35;
+  text-transform: uppercase;
+  vertical-align: .08rem;
+}
+.dataset-access--restricted { background: #f0b353; color: #172033; }
 .faq-category__cta { margin: 34px 0 0 120px; }
 .faq-category__cta a { display: inline-flex; padding: 14px 18px; border: 1px solid var(--ink); background: var(--ink); color: #fff; font-size: .72rem; text-decoration: none; text-transform: uppercase; letter-spacing: .08em; }
 
